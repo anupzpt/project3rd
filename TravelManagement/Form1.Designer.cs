@@ -34,7 +34,6 @@ namespace TravelManagement
             this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.loginbutton = new Guna.UI2.WinForms.Guna2CircleButton();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -44,20 +43,21 @@ namespace TravelManagement
             this.Tours = new System.Windows.Forms.Button();
             this.Aboutus = new System.Windows.Forms.Button();
             this.Home = new System.Windows.Forms.Button();
-            this.loginbutton2 = new Guna.UI2.WinForms.Guna2CircleButton();
-            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.aboutususercontrol = new TravelManagement.aboutususercontrol();
             this.homepageusercontrol = new TravelManagement.Homepageusercontrol();
             this.login = new TravelManagement.login();
             this.trekkingusercontrol = new TravelManagement.trekkingusercontrol();
             this.specialusercontrol = new TravelManagement.Specialusercontrol();
             this.contactusercontrol = new TravelManagement.contactusercontrol();
             this.tourusercontrolform = new TravelManagement.tourusercontrolform();
+            this.aboutususercontrol = new TravelManagement.aboutususercontrol();
+            this.loginbutton = new Guna.UI2.WinForms.Guna2CircleButton();
+            this.loginbutton2 = new Guna.UI2.WinForms.Guna2CircleButton();
+            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2Panel2.SuspendLayout();
             this.guna2Panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2Panel1
@@ -132,33 +132,6 @@ namespace TravelManagement
             this.label4.Size = new System.Drawing.Size(19, 29);
             this.label4.TabIndex = 10;
             this.label4.Text = "|";
-            // 
-            // loginbutton
-            // 
-            this.loginbutton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.loginbutton.BackColor = System.Drawing.Color.Transparent;
-            this.loginbutton.BackgroundImage = global::TravelManagement.Properties.Resources.icons8_user_96;
-            this.loginbutton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.loginbutton.BorderThickness = 1;
-            this.loginbutton.CheckedState.Parent = this.loginbutton;
-            this.loginbutton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.loginbutton.CustomImages.Parent = this.loginbutton;
-            this.loginbutton.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.loginbutton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.loginbutton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.loginbutton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.loginbutton.DisabledState.Parent = this.loginbutton;
-            this.loginbutton.FillColor = System.Drawing.Color.Transparent;
-            this.loginbutton.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.loginbutton.ForeColor = System.Drawing.Color.Black;
-            this.loginbutton.HoverState.Parent = this.loginbutton;
-            this.loginbutton.Location = new System.Drawing.Point(435, 3);
-            this.loginbutton.Name = "loginbutton";
-            this.loginbutton.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.loginbutton.ShadowDecoration.Parent = this.loginbutton;
-            this.loginbutton.Size = new System.Drawing.Size(42, 37);
-            this.loginbutton.TabIndex = 6;
-            this.loginbutton.Click += new System.EventHandler(this.guna2CircleButton1_Click);
             // 
             // label3
             // 
@@ -298,45 +271,6 @@ namespace TravelManagement
             this.Home.UseVisualStyleBackColor = false;
             this.Home.Click += new System.EventHandler(this.Home_Click);
             // 
-            // loginbutton2
-            // 
-            this.loginbutton2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.loginbutton2.BackColor = System.Drawing.Color.Transparent;
-            this.loginbutton2.BackgroundImage = global::TravelManagement.Properties.Resources.icons8_user_96;
-            this.loginbutton2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.loginbutton2.BorderThickness = 1;
-            this.loginbutton2.CheckedState.Parent = this.loginbutton2;
-            this.loginbutton2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.loginbutton2.CustomImages.Parent = this.loginbutton2;
-            this.loginbutton2.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.loginbutton2.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.loginbutton2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.loginbutton2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.loginbutton2.DisabledState.Parent = this.loginbutton2;
-            this.loginbutton2.FillColor = System.Drawing.Color.Transparent;
-            this.loginbutton2.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.loginbutton2.ForeColor = System.Drawing.Color.Black;
-            this.loginbutton2.HoverState.Parent = this.loginbutton2;
-            this.loginbutton2.Location = new System.Drawing.Point(435, 3);
-            this.loginbutton2.Name = "loginbutton2";
-            this.loginbutton2.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.loginbutton2.ShadowDecoration.Parent = this.loginbutton2;
-            this.loginbutton2.Size = new System.Drawing.Size(42, 37);
-            this.loginbutton2.TabIndex = 12;
-            this.loginbutton2.Click += new System.EventHandler(this.loginbutton2_Click);
-            // 
-            // guna2PictureBox1
-            // 
-            this.guna2PictureBox1.Image = global::TravelManagement.Properties.Resources.logo;
-            this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(23, 15);
-            this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.ShadowDecoration.Parent = this.guna2PictureBox1;
-            this.guna2PictureBox1.Size = new System.Drawing.Size(191, 65);
-            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.guna2PictureBox1.TabIndex = 0;
-            this.guna2PictureBox1.TabStop = false;
-            // 
             // panel1
             // 
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -354,17 +288,6 @@ namespace TravelManagement
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(840, 307);
             this.panel1.TabIndex = 2;
-            // 
-            // aboutususercontrol
-            // 
-            this.aboutususercontrol.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.aboutususercontrol.AutoScroll = true;
-            this.aboutususercontrol.Location = new System.Drawing.Point(0, 0);
-            this.aboutususercontrol.Name = "aboutususercontrol";
-            this.aboutususercontrol.Size = new System.Drawing.Size(840, 400);
-            this.aboutususercontrol.TabIndex = 19;
             // 
             // homepageusercontrol
             // 
@@ -430,6 +353,83 @@ namespace TravelManagement
             this.tourusercontrolform.Size = new System.Drawing.Size(840, 307);
             this.tourusercontrolform.TabIndex = 14;
             // 
+            // aboutususercontrol
+            // 
+            this.aboutususercontrol.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.aboutususercontrol.AutoScroll = true;
+            this.aboutususercontrol.Location = new System.Drawing.Point(0, 0);
+            this.aboutususercontrol.Name = "aboutususercontrol";
+            this.aboutususercontrol.Size = new System.Drawing.Size(840, 400);
+            this.aboutususercontrol.TabIndex = 19;
+            // 
+            // loginbutton
+            // 
+            this.loginbutton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.loginbutton.BackColor = System.Drawing.Color.Transparent;
+            this.loginbutton.BackgroundImage = global::TravelManagement.Properties.Resources.icons8_user_96;
+            this.loginbutton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.loginbutton.BorderThickness = 1;
+            this.loginbutton.CheckedState.Parent = this.loginbutton;
+            this.loginbutton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.loginbutton.CustomImages.Parent = this.loginbutton;
+            this.loginbutton.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.loginbutton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.loginbutton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.loginbutton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.loginbutton.DisabledState.Parent = this.loginbutton;
+            this.loginbutton.FillColor = System.Drawing.Color.Transparent;
+            this.loginbutton.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.loginbutton.ForeColor = System.Drawing.Color.Black;
+            this.loginbutton.HoverState.Parent = this.loginbutton;
+            this.loginbutton.Location = new System.Drawing.Point(435, 3);
+            this.loginbutton.Name = "loginbutton";
+            this.loginbutton.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.loginbutton.ShadowDecoration.Parent = this.loginbutton;
+            this.loginbutton.Size = new System.Drawing.Size(42, 37);
+            this.loginbutton.TabIndex = 6;
+            this.loginbutton.Click += new System.EventHandler(this.guna2CircleButton1_Click);
+            // 
+            // loginbutton2
+            // 
+            this.loginbutton2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.loginbutton2.BackColor = System.Drawing.Color.Transparent;
+            this.loginbutton2.BackgroundImage = global::TravelManagement.Properties.Resources.icons8_user_96;
+            this.loginbutton2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.loginbutton2.BorderThickness = 1;
+            this.loginbutton2.CheckedState.Parent = this.loginbutton2;
+            this.loginbutton2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.loginbutton2.CustomImages.Parent = this.loginbutton2;
+            this.loginbutton2.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.loginbutton2.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.loginbutton2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.loginbutton2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.loginbutton2.DisabledState.Parent = this.loginbutton2;
+            this.loginbutton2.FillColor = System.Drawing.Color.Transparent;
+            this.loginbutton2.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.loginbutton2.ForeColor = System.Drawing.Color.Black;
+            this.loginbutton2.HoverState.Parent = this.loginbutton2;
+            this.loginbutton2.Location = new System.Drawing.Point(435, 3);
+            this.loginbutton2.Name = "loginbutton2";
+            this.loginbutton2.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.loginbutton2.ShadowDecoration.Parent = this.loginbutton2;
+            this.loginbutton2.Size = new System.Drawing.Size(42, 37);
+            this.loginbutton2.TabIndex = 12;
+            this.loginbutton2.Click += new System.EventHandler(this.loginbutton2_Click);
+            // 
+            // guna2PictureBox1
+            // 
+            this.guna2PictureBox1.Image = global::TravelManagement.Properties.Resources.logo;
+            this.guna2PictureBox1.ImageRotate = 0F;
+            this.guna2PictureBox1.Location = new System.Drawing.Point(23, 15);
+            this.guna2PictureBox1.Name = "guna2PictureBox1";
+            this.guna2PictureBox1.ShadowDecoration.Parent = this.guna2PictureBox1;
+            this.guna2PictureBox1.Size = new System.Drawing.Size(191, 65);
+            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.guna2PictureBox1.TabIndex = 0;
+            this.guna2PictureBox1.TabStop = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -444,8 +444,8 @@ namespace TravelManagement
             this.guna2Panel2.ResumeLayout(false);
             this.guna2Panel3.ResumeLayout(false);
             this.guna2Panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }

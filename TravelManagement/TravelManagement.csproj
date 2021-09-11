@@ -94,6 +94,12 @@
     <Compile Include="contactusercontrol.Designer.cs">
       <DependentUpon>contactusercontrol.cs</DependentUpon>
     </Compile>
+    <Compile Include="Detail.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Detail.Designer.cs">
+      <DependentUpon>Detail.cs</DependentUpon>
+    </Compile>
     <Compile Include="explorenepal.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -239,6 +245,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="contactusercontrol.resx">
       <DependentUpon>contactusercontrol.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Detail.resx">
+      <DependentUpon>Detail.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="explorenepal.resx">
       <DependentUpon>explorenepal.cs</DependentUpon>
@@ -519,6 +528,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\team.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chevron_right_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chevron_left_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\left.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

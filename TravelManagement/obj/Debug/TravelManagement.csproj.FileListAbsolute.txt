@@ -37,3 +37,4 @@ D:\Project\TravelManagement\obj\Debug\TravelManagement.contactusercontrol.resour
 D:\Project\TravelManagement\obj\Debug\TravelManagement.Aboutus.resources
 D:\Project\TravelManagement\obj\Debug\TravelManagement.aboutusdetail.resources
 D:\Project\TravelManagement\obj\Debug\TravelManagement.aboutususercontrol.resources
+D:\Project\TravelManagement\obj\Debug\TravelManagement.Detail.resources

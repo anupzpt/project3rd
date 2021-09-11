@@ -29,37 +29,74 @@ namespace TravelManagement
         /// </summary>
         private void InitializeComponent()
         {
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.left = new Guna.UI.WinForms.GunaImageButton();
+            this.homepagepanel = new System.Windows.Forms.Panel();
+            this.right = new Guna.UI.WinForms.GunaImageButton();
+            this.homepagepanel.SuspendLayout();
             this.SuspendLayout();
             // 
-            // pictureBox1
+            // left
             // 
-            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.left.BackColor = System.Drawing.Color.Transparent;
+            this.left.BackgroundImage = global::TravelManagement.Properties.Resources.left;
+            this.left.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.left.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.left.Image = null;
+            this.left.ImageSize = new System.Drawing.Size(64, 64);
+            this.left.Location = new System.Drawing.Point(3, 170);
+            this.left.Name = "left";
+            this.left.OnHoverImage = null;
+            this.left.OnHoverImageOffset = new System.Drawing.Point(0, 0);
+            this.left.Size = new System.Drawing.Size(36, 39);
+            this.left.TabIndex = 22;
+            this.left.Click += new System.EventHandler(this.left_Click);
+            // 
+            // homepagepanel
+            // 
+            this.homepagepanel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox1.Image = global::TravelManagement.Properties.Resources.hompageimage;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(840, 396);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.homepagepanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.homepagepanel.Controls.Add(this.right);
+            this.homepagepanel.Controls.Add(this.left);
+            this.homepagepanel.Location = new System.Drawing.Point(0, 0);
+            this.homepagepanel.Name = "homepagepanel";
+            this.homepagepanel.Size = new System.Drawing.Size(840, 405);
+            this.homepagepanel.TabIndex = 22;
+            // 
+            // right
+            // 
+            this.right.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.right.BackColor = System.Drawing.Color.Transparent;
+            this.right.BackgroundImage = global::TravelManagement.Properties.Resources.right;
+            this.right.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.right.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.right.Image = null;
+            this.right.ImageSize = new System.Drawing.Size(64, 64);
+            this.right.Location = new System.Drawing.Point(801, 170);
+            this.right.Name = "right";
+            this.right.OnHoverImage = null;
+            this.right.OnHoverImageOffset = new System.Drawing.Point(0, 0);
+            this.right.Size = new System.Drawing.Size(36, 39);
+            this.right.TabIndex = 23;
+            this.right.Click += new System.EventHandler(this.right_Click);
             // 
             // homepage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.homepagepanel);
             this.Name = "homepage";
-            this.Size = new System.Drawing.Size(840, 396);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.Size = new System.Drawing.Size(840, 405);
+            this.Load += new System.EventHandler(this.homepage_Load);
+            this.homepagepanel.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private Guna.UI.WinForms.GunaImageButton left;
+        private System.Windows.Forms.Panel homepagepanel;
+        private Guna.UI.WinForms.GunaImageButton right;
     }
 }
