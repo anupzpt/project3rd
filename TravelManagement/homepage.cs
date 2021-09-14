@@ -36,7 +36,6 @@ namespace TravelManagement
             try
             {
                 SN = SN + 1;
-                MessageBox.Show(SN.ToString());
                 SqlConnection con = new SqlConnection(MyGlobal.constring);
                 string image = "Select * from imagetable where SN = '" + SN + "'";
                 SqlDataAdapter sda = new SqlDataAdapter(image, con);
@@ -67,8 +66,6 @@ namespace TravelManagement
             try
             {
                 SN = SN - 1;
-                MessageBox.Show(SN.ToString());
-
                 SqlConnection con = new SqlConnection(MyGlobal.constring);
                 string image = "Select * from imagetable where SN = '" + SN + "'";
                 SqlDataAdapter sda = new SqlDataAdapter(image, con);

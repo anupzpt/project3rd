@@ -29,23 +29,26 @@ namespace TravelManagement
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.tourimagepanel = new System.Windows.Forms.Panel();
             this.tourtext = new System.Windows.Forms.Label();
-            this.panel1.SuspendLayout();
+            this.right = new Guna.UI.WinForms.GunaImageButton();
+            this.left = new Guna.UI.WinForms.GunaImageButton();
+            this.tourimagepanel.SuspendLayout();
             this.SuspendLayout();
             // 
-            // panel1
+            // tourimagepanel
             // 
-            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.tourimagepanel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel1.BackgroundImage = global::TravelManagement.Properties.Resources.Fewa_Lake_Pokhara_Nepal_880x448;
-            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel1.Controls.Add(this.tourtext);
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(840, 400);
-            this.panel1.TabIndex = 0;
+            this.tourimagepanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.tourimagepanel.Controls.Add(this.left);
+            this.tourimagepanel.Controls.Add(this.right);
+            this.tourimagepanel.Controls.Add(this.tourtext);
+            this.tourimagepanel.Location = new System.Drawing.Point(0, 0);
+            this.tourimagepanel.Name = "tourimagepanel";
+            this.tourimagepanel.Size = new System.Drawing.Size(840, 400);
+            this.tourimagepanel.TabIndex = 0;
             // 
             // tourtext
             // 
@@ -54,30 +57,66 @@ namespace TravelManagement
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tourtext.AutoSize = true;
             this.tourtext.BackColor = System.Drawing.Color.Transparent;
-            this.tourtext.Font = new System.Drawing.Font("Playfair Display", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tourtext.Location = new System.Drawing.Point(43, 33);
+            this.tourtext.Font = new System.Drawing.Font("Franklin Gothic Demi", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tourtext.ForeColor = System.Drawing.Color.White;
+            this.tourtext.Location = new System.Drawing.Point(239, 111);
             this.tourtext.Name = "tourtext";
-            this.tourtext.Size = new System.Drawing.Size(211, 36);
+            this.tourtext.Size = new System.Drawing.Size(353, 61);
             this.tourtext.TabIndex = 1;
             this.tourtext.Text = "TOUR IN NEPAL";
+            // 
+            // right
+            // 
+            this.right.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.right.BackColor = System.Drawing.Color.Transparent;
+            this.right.BackgroundImage = global::TravelManagement.Properties.Resources.right;
+            this.right.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.right.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.right.Image = null;
+            this.right.ImageSize = new System.Drawing.Size(64, 64);
+            this.right.Location = new System.Drawing.Point(783, 170);
+            this.right.Name = "right";
+            this.right.OnHoverImage = null;
+            this.right.OnHoverImageOffset = new System.Drawing.Point(0, 0);
+            this.right.Size = new System.Drawing.Size(36, 39);
+            this.right.TabIndex = 24;
+            this.right.Click += new System.EventHandler(this.right_Click);
+            // 
+            // left
+            // 
+            this.left.BackColor = System.Drawing.Color.Transparent;
+            this.left.BackgroundImage = global::TravelManagement.Properties.Resources.left;
+            this.left.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.left.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.left.Image = null;
+            this.left.ImageSize = new System.Drawing.Size(64, 64);
+            this.left.Location = new System.Drawing.Point(3, 170);
+            this.left.Name = "left";
+            this.left.OnHoverImage = null;
+            this.left.OnHoverImageOffset = new System.Drawing.Point(0, 0);
+            this.left.Size = new System.Drawing.Size(36, 39);
+            this.left.TabIndex = 25;
+            this.left.Click += new System.EventHandler(this.left_Click);
             // 
             // tour
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.tourimagepanel);
             this.Name = "tour";
             this.Size = new System.Drawing.Size(840, 400);
             this.Load += new System.EventHandler(this.tour_Load);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.tourimagepanel.ResumeLayout(false);
+            this.tourimagepanel.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel tourimagepanel;
         private System.Windows.Forms.Label tourtext;
+        private Guna.UI.WinForms.GunaImageButton right;
+        private Guna.UI.WinForms.GunaImageButton left;
     }
 }
