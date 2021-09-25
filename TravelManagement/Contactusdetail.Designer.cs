@@ -34,7 +34,6 @@ namespace TravelManagement
             this.bunifuMaterialTextbox2 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.gunaGradientButton1 = new Guna.UI.WinForms.GunaGradientButton();
             this.bunifuMaterialTextbox3 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.bunifuMaterialTextbox1 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.label6 = new System.Windows.Forms.Label();
             this.emaillabel = new System.Windows.Forms.Label();
             this.namelabel = new System.Windows.Forms.Label();
@@ -55,6 +54,7 @@ namespace TravelManagement
             this.button1 = new System.Windows.Forms.Button();
             this.contactuslabel = new System.Windows.Forms.Label();
             this.gunaShadowPanel1 = new Guna.UI.WinForms.GunaShadowPanel();
+            this.bunifuMaterialTextbox1 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.havequestionpanel.SuspendLayout();
             this.contactimagepanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
@@ -73,11 +73,11 @@ namespace TravelManagement
             this.havequestionpanel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.havequestionpanel.BackColor = System.Drawing.SystemColors.Control;
+            this.havequestionpanel.Controls.Add(this.bunifuMaterialTextbox1);
             this.havequestionpanel.Controls.Add(this.bunifuMaterialTextbox4);
             this.havequestionpanel.Controls.Add(this.bunifuMaterialTextbox2);
             this.havequestionpanel.Controls.Add(this.gunaGradientButton1);
             this.havequestionpanel.Controls.Add(this.bunifuMaterialTextbox3);
-            this.havequestionpanel.Controls.Add(this.bunifuMaterialTextbox1);
             this.havequestionpanel.Controls.Add(this.label6);
             this.havequestionpanel.Controls.Add(this.emaillabel);
             this.havequestionpanel.Controls.Add(this.namelabel);
@@ -175,25 +175,6 @@ namespace TravelManagement
             this.bunifuMaterialTextbox3.Size = new System.Drawing.Size(395, 49);
             this.bunifuMaterialTextbox3.TabIndex = 10;
             this.bunifuMaterialTextbox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
-            // bunifuMaterialTextbox1
-            // 
-            this.bunifuMaterialTextbox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuMaterialTextbox1.Font = new System.Drawing.Font("Playfair Display", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuMaterialTextbox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuMaterialTextbox1.HintForeColor = System.Drawing.Color.Empty;
-            this.bunifuMaterialTextbox1.HintText = "";
-            this.bunifuMaterialTextbox1.isPassword = false;
-            this.bunifuMaterialTextbox1.LineFocusedColor = System.Drawing.Color.Blue;
-            this.bunifuMaterialTextbox1.LineIdleColor = System.Drawing.Color.Gray;
-            this.bunifuMaterialTextbox1.LineMouseHoverColor = System.Drawing.Color.Blue;
-            this.bunifuMaterialTextbox1.LineThickness = 1;
-            this.bunifuMaterialTextbox1.Location = new System.Drawing.Point(80, 104);
-            this.bunifuMaterialTextbox1.Margin = new System.Windows.Forms.Padding(4);
-            this.bunifuMaterialTextbox1.Name = "bunifuMaterialTextbox1";
-            this.bunifuMaterialTextbox1.Size = new System.Drawing.Size(287, 32);
-            this.bunifuMaterialTextbox1.TabIndex = 3;
-            this.bunifuMaterialTextbox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // label6
             // 
@@ -413,6 +394,25 @@ namespace TravelManagement
             this.gunaShadowPanel1.Size = new System.Drawing.Size(834, 447);
             this.gunaShadowPanel1.TabIndex = 2;
             // 
+            // bunifuMaterialTextbox1
+            // 
+            this.bunifuMaterialTextbox1.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.bunifuMaterialTextbox1.Font = new System.Drawing.Font("Playfair Display", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuMaterialTextbox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.bunifuMaterialTextbox1.HintForeColor = System.Drawing.Color.Empty;
+            this.bunifuMaterialTextbox1.HintText = "";
+            this.bunifuMaterialTextbox1.isPassword = false;
+            this.bunifuMaterialTextbox1.LineFocusedColor = System.Drawing.Color.Blue;
+            this.bunifuMaterialTextbox1.LineIdleColor = System.Drawing.Color.Gray;
+            this.bunifuMaterialTextbox1.LineMouseHoverColor = System.Drawing.Color.Blue;
+            this.bunifuMaterialTextbox1.LineThickness = 3;
+            this.bunifuMaterialTextbox1.Location = new System.Drawing.Point(80, 93);
+            this.bunifuMaterialTextbox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.bunifuMaterialTextbox1.Name = "bunifuMaterialTextbox1";
+            this.bunifuMaterialTextbox1.Size = new System.Drawing.Size(287, 38);
+            this.bunifuMaterialTextbox1.TabIndex = 14;
+            this.bunifuMaterialTextbox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
             // Contactusdetail
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -448,7 +448,6 @@ namespace TravelManagement
         private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox2;
         private Guna.UI.WinForms.GunaGradientButton gunaGradientButton1;
         private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox3;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox1;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Panel contactimagepanel;
         private System.Windows.Forms.Label label5;
@@ -466,5 +465,6 @@ namespace TravelManagement
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label contactuslabel;
         private Guna.UI.WinForms.GunaShadowPanel gunaShadowPanel1;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox1;
     }
 }

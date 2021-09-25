@@ -40,7 +40,7 @@ namespace TravelManagement
             | System.Windows.Forms.AnchorStyles.Right)));
             this.contactusdetail.Location = new System.Drawing.Point(0, 22);
             this.contactusdetail.Name = "contactusdetail";
-            this.contactusdetail.Size = new System.Drawing.Size(772, 400);
+            this.contactusdetail.Size = new System.Drawing.Size(755, 400);
             this.contactusdetail.TabIndex = 1;
             // 
             // contactus
@@ -49,7 +49,7 @@ namespace TravelManagement
             | System.Windows.Forms.AnchorStyles.Right)));
             this.contactus.Location = new System.Drawing.Point(0, 0);
             this.contactus.Name = "contactus";
-            this.contactus.Size = new System.Drawing.Size(772, 400);
+            this.contactus.Size = new System.Drawing.Size(755, 400);
             this.contactus.TabIndex = 0;
             // 
             // lastpanel
@@ -58,7 +58,7 @@ namespace TravelManagement
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lastpanel.Location = new System.Drawing.Point(0, 0);
             this.lastpanel.Name = "lastpanel";
-            this.lastpanel.Size = new System.Drawing.Size(738, 203);
+            this.lastpanel.Size = new System.Drawing.Size(721, 203);
             this.lastpanel.TabIndex = 2;
             // 
             // contactusercontrol
@@ -70,7 +70,7 @@ namespace TravelManagement
             this.Controls.Add(this.contactus);
             this.Controls.Add(this.lastpanel);
             this.Name = "contactusercontrol";
-            this.Size = new System.Drawing.Size(738, 403);
+            this.Size = new System.Drawing.Size(721, 403);
             this.Load += new System.EventHandler(this.contactusercontrol_Load);
             this.ResumeLayout(false);
 

@@ -21,9 +21,14 @@ namespace TravelManagement
         {
             trekking.Size = new Size(840, 489);
             trekkinginnepal.Location = new Point(0, 492);
-            trekkinginnepal.Size = new Size(900, 400);
+            trekkinginnepal.Size = new Size(850, 457);
             lastpanel.Size = new Size(840, 203);
             lastpanel.Location = new Point(0, 1000);
+        }
+
+        private void trekkinginnepal_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
