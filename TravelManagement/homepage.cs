@@ -20,9 +20,9 @@ namespace TravelManagement
 
         private void homepage_Load(object sender, EventArgs e)
         {
-            string SN = "1";
+            string SN = "2";
             SqlConnection con = new SqlConnection(MyGlobal.constring);
-            string image="Select * from imagetable where SN = '"+ SN +"'";
+            string image="Select * from imagetable where SN = "+ SN ;
             SqlDataAdapter sda = new SqlDataAdapter(image, con);
             DataTable dt = new DataTable();
             sda.Fill(dt);
