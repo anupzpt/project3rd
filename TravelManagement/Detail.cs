@@ -33,5 +33,10 @@ namespace TravelManagement
             bookpanel.Size = new Size(400, 360);
           //  Crossbutton.Location = new Point(780,10);
         }
+
+        private void detailshadowpanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
