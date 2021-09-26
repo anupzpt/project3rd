@@ -142,6 +142,7 @@ namespace TravelManagement
             // 
             // loggedin
             // 
+            this.loggedin.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.loggedin.BackColor = System.Drawing.Color.Silver;
             this.loggedin.Location = new System.Drawing.Point(0, 0);
             this.loggedin.Name = "loggedin";

@@ -31,6 +31,7 @@ namespace TravelManagement
         private void Form1_Load(object sender, EventArgs e)
         {
             login.Visible = false;
+            login.Location = new Point(435, 5);
             tourusercontrolform.Visible = false;
             trekkingusercontrol.Visible = false;
             specialusercontrol.Visible = false;

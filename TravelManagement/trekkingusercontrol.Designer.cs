@@ -40,7 +40,7 @@ namespace TravelManagement
             | System.Windows.Forms.AnchorStyles.Right)));
             this.trekking.Location = new System.Drawing.Point(0, 0);
             this.trekking.Name = "trekking";
-            this.trekking.Size = new System.Drawing.Size(772, 400);
+            this.trekking.Size = new System.Drawing.Size(769, 400);
             this.trekking.TabIndex = 0;
             // 
             // lastpanel
@@ -49,7 +49,7 @@ namespace TravelManagement
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lastpanel.Location = new System.Drawing.Point(0, 0);
             this.lastpanel.Name = "lastpanel";
-            this.lastpanel.Size = new System.Drawing.Size(823, 203);
+            this.lastpanel.Size = new System.Drawing.Size(859, 203);
             this.lastpanel.TabIndex = 2;
             // 
             // trekkinginnepal
@@ -58,8 +58,9 @@ namespace TravelManagement
             | System.Windows.Forms.AnchorStyles.Right)));
             this.trekkinginnepal.Location = new System.Drawing.Point(0, 0);
             this.trekkinginnepal.Name = "trekkinginnepal";
-            this.trekkinginnepal.Size = new System.Drawing.Size(772, 420);
+            this.trekkinginnepal.Size = new System.Drawing.Size(769, 400);
             this.trekkinginnepal.TabIndex = 1;
+            this.trekkinginnepal.Load += new System.EventHandler(this.trekkinginnepal_Load);
             // 
             // trekkingusercontrol
             // 
@@ -70,7 +71,7 @@ namespace TravelManagement
             this.Controls.Add(this.lastpanel);
             this.Controls.Add(this.trekkinginnepal);
             this.Name = "trekkingusercontrol";
-            this.Size = new System.Drawing.Size(789, 400);
+            this.Size = new System.Drawing.Size(772, 400);
             this.Load += new System.EventHandler(this.trekkingusercontrol_Load);
             this.ResumeLayout(false);
 

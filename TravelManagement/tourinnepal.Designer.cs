@@ -30,10 +30,6 @@ namespace TravelManagement
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.bestpanel4 = new System.Windows.Forms.Panel();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.gorkhabutton = new System.Windows.Forms.Button();
             this.bestpanel2 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.halesibutton = new System.Windows.Forms.Button();
@@ -48,11 +44,13 @@ namespace TravelManagement
             this.darjellingbutton = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.guna2ShadowPanel1 = new Guna.UI2.WinForms.Guna2ShadowPanel();
-            this.right = new Guna.UI.WinForms.GunaImageButton();
+            this.bestpanel4 = new System.Windows.Forms.Panel();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.left = new Guna.UI.WinForms.GunaImageButton();
+            this.right = new Guna.UI.WinForms.GunaImageButton();
             this.panel1.SuspendLayout();
-            this.bestpanel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.bestpanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.bestpanel3.SuspendLayout();
@@ -60,6 +58,8 @@ namespace TravelManagement
             this.bestpanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.guna2ShadowPanel1.SuspendLayout();
+            this.bestpanel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -67,7 +67,6 @@ namespace TravelManagement
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel1.Controls.Add(this.bestpanel4);
             this.panel1.Controls.Add(this.bestpanel2);
             this.panel1.Controls.Add(this.bestpanel3);
             this.panel1.Controls.Add(this.tournepal);
@@ -75,53 +74,8 @@ namespace TravelManagement
             this.panel1.Controls.Add(this.guna2ShadowPanel1);
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(931, 464);
+            this.panel1.Size = new System.Drawing.Size(927, 420);
             this.panel1.TabIndex = 2;
-            // 
-            // bestpanel4
-            // 
-            this.bestpanel4.Controls.Add(this.pictureBox4);
-            this.bestpanel4.Controls.Add(this.label5);
-            this.bestpanel4.Controls.Add(this.gorkhabutton);
-            this.bestpanel4.Location = new System.Drawing.Point(756, 72);
-            this.bestpanel4.Name = "bestpanel4";
-            this.bestpanel4.Size = new System.Drawing.Size(242, 249);
-            this.bestpanel4.TabIndex = 13;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox4.Image = global::TravelManagement.Properties.Resources.gorkha;
-            this.pictureBox4.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(242, 193);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox4.TabIndex = 12;
-            this.pictureBox4.TabStop = false;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.Gainsboro;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.Maroon;
-            this.label5.Location = new System.Drawing.Point(10, 218);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(92, 20);
-            this.label5.TabIndex = 10;
-            this.label5.Text = "NRS 15000";
-            // 
-            // gorkhabutton
-            // 
-            this.gorkhabutton.BackColor = System.Drawing.Color.Gainsboro;
-            this.gorkhabutton.Font = new System.Drawing.Font("Playfair Display", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gorkhabutton.Location = new System.Drawing.Point(0, 193);
-            this.gorkhabutton.Name = "gorkhabutton";
-            this.gorkhabutton.Size = new System.Drawing.Size(242, 56);
-            this.gorkhabutton.TabIndex = 11;
-            this.gorkhabutton.Text = "GORKHA TOUR";
-            this.gorkhabutton.TextAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.gorkhabutton.UseVisualStyleBackColor = false;
             // 
             // bestpanel2
             // 
@@ -160,7 +114,6 @@ namespace TravelManagement
             // pictureBox2
             // 
             this.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox2.Image = global::TravelManagement.Properties.Resources.Halesi_Mahadev_Temple;
             this.pictureBox2.Location = new System.Drawing.Point(0, 0);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(242, 193);
@@ -205,7 +158,6 @@ namespace TravelManagement
             // pictureBox3
             // 
             this.pictureBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox3.Image = global::TravelManagement.Properties.Resources.pokhara1;
             this.pictureBox3.Location = new System.Drawing.Point(0, 0);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(242, 193);
@@ -261,7 +213,6 @@ namespace TravelManagement
             // pictureBox1
             // 
             this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox1.Image = global::TravelManagement.Properties.Resources.darjeeling;
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(242, 193);
@@ -275,6 +226,7 @@ namespace TravelManagement
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.guna2ShadowPanel1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2ShadowPanel1.Controls.Add(this.bestpanel4);
             this.guna2ShadowPanel1.Controls.Add(this.left);
             this.guna2ShadowPanel1.Controls.Add(this.right);
             this.guna2ShadowPanel1.FillColor = System.Drawing.Color.White;
@@ -282,24 +234,53 @@ namespace TravelManagement
             this.guna2ShadowPanel1.Name = "guna2ShadowPanel1";
             this.guna2ShadowPanel1.ShadowColor = System.Drawing.Color.DarkGreen;
             this.guna2ShadowPanel1.ShadowDepth = 200;
-            this.guna2ShadowPanel1.Size = new System.Drawing.Size(820, 400);
+            this.guna2ShadowPanel1.Size = new System.Drawing.Size(860, 369);
             this.guna2ShadowPanel1.TabIndex = 14;
             // 
-            // right
+            // bestpanel4
             // 
-            this.right.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.right.BackColor = System.Drawing.Color.Transparent;
-            this.right.BackgroundImage = global::TravelManagement.Properties.Resources.chevron_right_50px;
-            this.right.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.right.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.right.Image = null;
-            this.right.ImageSize = new System.Drawing.Size(64, 64);
-            this.right.Location = new System.Drawing.Point(766, 148);
-            this.right.Name = "right";
-            this.right.OnHoverImage = null;
-            this.right.OnHoverImageOffset = new System.Drawing.Point(0, 0);
-            this.right.Size = new System.Drawing.Size(51, 49);
-            this.right.TabIndex = 12;
+            this.bestpanel4.BackColor = System.Drawing.SystemColors.Control;
+            this.bestpanel4.Controls.Add(this.pictureBox4);
+            this.bestpanel4.Controls.Add(this.label1);
+            this.bestpanel4.Controls.Add(this.button1);
+            this.bestpanel4.Location = new System.Drawing.Point(736, 52);
+            this.bestpanel4.Name = "bestpanel4";
+            this.bestpanel4.Size = new System.Drawing.Size(242, 249);
+            this.bestpanel4.TabIndex = 13;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox4.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(242, 193);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox4.TabIndex = 12;
+            this.pictureBox4.TabStop = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Gainsboro;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Maroon;
+            this.label1.Location = new System.Drawing.Point(10, 218);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(92, 20);
+            this.label1.TabIndex = 10;
+            this.label1.Text = "NRS 15000";
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Gainsboro;
+            this.button1.Font = new System.Drawing.Font("Playfair Display", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(0, 193);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(242, 56);
+            this.button1.TabIndex = 11;
+            this.button1.Text = "POKHARA TOUR";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.button1.UseVisualStyleBackColor = false;
             // 
             // left
             // 
@@ -315,6 +296,23 @@ namespace TravelManagement
             this.left.Size = new System.Drawing.Size(51, 49);
             this.left.TabIndex = 13;
             // 
+            // right
+            // 
+            this.right.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.right.BackColor = System.Drawing.Color.Transparent;
+            this.right.BackgroundImage = global::TravelManagement.Properties.Resources.chevron_right_50px;
+            this.right.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.right.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.right.Image = null;
+            this.right.ImageSize = new System.Drawing.Size(64, 64);
+            this.right.Location = new System.Drawing.Point(805, 148);
+            this.right.Name = "right";
+            this.right.OnHoverImage = null;
+            this.right.OnHoverImageOffset = new System.Drawing.Point(0, 0);
+            this.right.Size = new System.Drawing.Size(51, 49);
+            this.right.TabIndex = 12;
+            this.right.Click += new System.EventHandler(this.right_Click);
+            // 
             // tourinnepal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -325,9 +323,6 @@ namespace TravelManagement
             this.Load += new System.EventHandler(this.tourinnepal_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.bestpanel4.ResumeLayout(false);
-            this.bestpanel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.bestpanel2.ResumeLayout(false);
             this.bestpanel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
@@ -338,6 +333,9 @@ namespace TravelManagement
             this.bestpanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.guna2ShadowPanel1.ResumeLayout(false);
+            this.bestpanel4.ResumeLayout(false);
+            this.bestpanel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -345,10 +343,6 @@ namespace TravelManagement
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel bestpanel4;
-        private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Button gorkhabutton;
         private System.Windows.Forms.Panel bestpanel2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button halesibutton;
@@ -361,9 +355,13 @@ namespace TravelManagement
         private System.Windows.Forms.Panel bestpanel1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button darjellingbutton;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private Guna.UI2.WinForms.Guna2ShadowPanel guna2ShadowPanel1;
         private Guna.UI.WinForms.GunaImageButton left;
         private Guna.UI.WinForms.GunaImageButton right;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Panel bestpanel4;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.PictureBox pictureBox4;
     }
 }

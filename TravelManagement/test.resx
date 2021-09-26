@@ -117,39 +117,4 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="bookpanel.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAE2SURBVChTDc2HTsJgFIDR/4mNCXHjQpAliigguwVaKIWW
-        lr1RXDH6TJ/3AU6Oinob7vwtj8M3cuN3StMPtNkXzcU31uoHZ/3LYPuHCjsL4u6Ke2/N02DLy+iNyniH
-        LsCcf2IL6AtQIXtKtDsjKSDdX5H11xQF1EavNCc7LAE9AeqyPSRsjYnZE1K9GRl3Qb6/pCxAH24wBXQE
-        qKDhcW36RAQkOmMeuhOeBRTcOVVvSUNAS4A6qTtcNFxuBMRaA1LWkIyAnICSM0OTwRCgDmsdzrQuV/Ue
-        kaZLwvR4aPk8CXixR1QE1AWoQLnFcaXNuYCQ3iXa6HEnIG32ybZ9igJqAtR+ocFB0eC0bHJZbRPWOsR1
-        m5SAjOGQF1AWoPZyGoG8zpGAYMngumJyKyCpWaTrNlkBBcPhH5wcJhJytUeKAAAAAElFTkSuQmCC
-</value>
-  </data>
-  <data name="detaillabel.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABrSURBVChThcxZCsAgEARR739eY+IW04Uy9F8sRpB5mJbO
-        q6Yap66aqqdHJZBDkENQwKkZunv81kWa1hveQJBDkENQwD9UdCeQQ5BDUMCuaYI1fmtaVYENLyDIIcgh
-        KOAfynolkEOQQ1BeZX1I8IpgXcwxhgAAAABJRU5ErkJggg==
-</value>
-  </data>
-  <data name="bunifuGradientPanel1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABrSURBVChThcxZCsAgEARR739eY+IW04Uy9F8sRpB5mJbO
-        q6Yap66aqqdHJZBDkENQwKkZunv81kWa1hveQJBDkENQwD9UdCeQQ5BDUMCuaYI1fmtaVYENLyDIIcgh
-        KOAfynolkEOQQ1BeZX1I8IpgXcwxhgAAAABJRU5ErkJggg==
-</value>
-  </data>
-  <data name="detailtext.Text" xml:space="preserve">
-    <value> Mardi Himal Trek is becoming more popular day by day due to
- the shorter distance and exceptional views.The high camp of 
-Mardi Himal is situated at a height of 3850 m.Mardi Himal trek 5
- days is the shortest trekking trail which reaches to 4500 m high 
-altitude as well as takes only 5 days trekking from Pokhara. </value>
-  </data>
 </root>

@@ -37,8 +37,8 @@ namespace TravelManagement
             this.gunaCircleButton1 = new Guna.UI.WinForms.GunaCircleButton();
             this.usertextbox = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.gunaShadowPanel1 = new Guna.UI.WinForms.GunaShadowPanel();
-            this.gunaCircleButton2 = new Guna.UI.WinForms.GunaCircleButton();
             this.loginbutton = new Guna.UI.WinForms.GunaButton();
+            this.gunaCircleButton2 = new Guna.UI.WinForms.GunaCircleButton();
             this.panel1.SuspendLayout();
             this.gunaPanel1.SuspendLayout();
             this.gunaShadowPanel1.SuspendLayout();
@@ -46,6 +46,7 @@ namespace TravelManagement
             // 
             // panel1
             // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.Controls.Add(this.gunaPanel1);
             this.panel1.Controls.Add(this.passwordtextbox);
             this.panel1.Controls.Add(this.gunaLabel1);
@@ -160,28 +161,6 @@ namespace TravelManagement
             this.gunaShadowPanel1.Size = new System.Drawing.Size(331, 233);
             this.gunaShadowPanel1.TabIndex = 6;
             // 
-            // gunaCircleButton2
-            // 
-            this.gunaCircleButton2.AnimationHoverSpeed = 0.07F;
-            this.gunaCircleButton2.AnimationSpeed = 0.03F;
-            this.gunaCircleButton2.BaseColor = System.Drawing.SystemColors.Info;
-            this.gunaCircleButton2.BorderColor = System.Drawing.Color.Black;
-            this.gunaCircleButton2.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.gunaCircleButton2.FocusedColor = System.Drawing.Color.Empty;
-            this.gunaCircleButton2.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gunaCircleButton2.ForeColor = System.Drawing.Color.White;
-            this.gunaCircleButton2.Image = global::TravelManagement.Properties.Resources.locked;
-            this.gunaCircleButton2.ImageSize = new System.Drawing.Size(52, 52);
-            this.gunaCircleButton2.Location = new System.Drawing.Point(13, 90);
-            this.gunaCircleButton2.Name = "gunaCircleButton2";
-            this.gunaCircleButton2.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
-            this.gunaCircleButton2.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.gunaCircleButton2.OnHoverForeColor = System.Drawing.Color.Wheat;
-            this.gunaCircleButton2.OnHoverImage = null;
-            this.gunaCircleButton2.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaCircleButton2.Size = new System.Drawing.Size(52, 52);
-            this.gunaCircleButton2.TabIndex = 3;
-            // 
             // loginbutton
             // 
             this.loginbutton.AnimationHoverSpeed = 0.07F;
@@ -210,6 +189,28 @@ namespace TravelManagement
             this.loginbutton.Text = "Login";
             this.loginbutton.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.loginbutton.Click += new System.EventHandler(this.loginbutton_Click);
+            // 
+            // gunaCircleButton2
+            // 
+            this.gunaCircleButton2.AnimationHoverSpeed = 0.07F;
+            this.gunaCircleButton2.AnimationSpeed = 0.03F;
+            this.gunaCircleButton2.BaseColor = System.Drawing.SystemColors.Info;
+            this.gunaCircleButton2.BorderColor = System.Drawing.Color.Black;
+            this.gunaCircleButton2.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.gunaCircleButton2.FocusedColor = System.Drawing.Color.Empty;
+            this.gunaCircleButton2.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.gunaCircleButton2.ForeColor = System.Drawing.Color.White;
+            this.gunaCircleButton2.Image = global::TravelManagement.Properties.Resources.locked;
+            this.gunaCircleButton2.ImageSize = new System.Drawing.Size(52, 52);
+            this.gunaCircleButton2.Location = new System.Drawing.Point(13, 90);
+            this.gunaCircleButton2.Name = "gunaCircleButton2";
+            this.gunaCircleButton2.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.gunaCircleButton2.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.gunaCircleButton2.OnHoverForeColor = System.Drawing.Color.Wheat;
+            this.gunaCircleButton2.OnHoverImage = null;
+            this.gunaCircleButton2.OnPressedColor = System.Drawing.Color.Black;
+            this.gunaCircleButton2.Size = new System.Drawing.Size(52, 52);
+            this.gunaCircleButton2.TabIndex = 3;
             // 
             // loggedin
             // 

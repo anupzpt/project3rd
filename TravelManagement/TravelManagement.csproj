@@ -192,6 +192,12 @@
     <Compile Include="Specialusercontrol.Designer.cs">
       <DependentUpon>Specialusercontrol.cs</DependentUpon>
     </Compile>
+    <Compile Include="test.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="test.Designer.cs">
+      <DependentUpon>test.cs</DependentUpon>
+    </Compile>
     <Compile Include="tour.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -295,6 +301,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Specialusercontrol.resx">
       <DependentUpon>Specialusercontrol.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="test.resx">
+      <DependentUpon>test.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="tour.resx">
       <DependentUpon>tour.cs</DependentUpon>
