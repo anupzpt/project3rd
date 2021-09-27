@@ -24,5 +24,10 @@ namespace TravelManagement
             tourinnepal.Size = new Size(860, 457);
             tourlastpanel.Location = new Point(0, 1000);
         }
+
+        private void tour_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

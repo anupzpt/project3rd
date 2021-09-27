@@ -21,6 +21,7 @@ namespace TravelManagement
 
         private void tourinnepal_Load(object sender, EventArgs e)
         {
+            detail.Visible = false;
             tournepal.Location = new Point(635, 45);
             bestpanel1.Location = new Point(100, 100);
             bestpanel2.Location = new Point(400, 100);
@@ -29,11 +30,16 @@ namespace TravelManagement
             SqlConnection con = new SqlConnection(MyGlobal.constring);
             try
             {
+
                 con.Open();
                 string image = "Select * from changepanel";
                 SqlDataAdapter sda = new SqlDataAdapter(image, con);
                 DataTable dt = new DataTable();
                 sda.Fill(dt);
+                string destination = dt.Rows[0]["Location"].ToString();
+                string destination1 = dt.Rows[1]["Location"].ToString();
+                string destination2 = dt.Rows[2]["Location"].ToString();
+                string destination3 = dt.Rows[3]["Location"].ToString();
                 string bestpanel = dt.Rows[0]["Picture"].ToString();
                 string bestpanel1 = dt.Rows[1]["Picture"].ToString();
                 string bestpanel2 = dt.Rows[2]["Picture"].ToString();
@@ -42,6 +48,10 @@ namespace TravelManagement
                 pictureBox2.Image = Image.FromFile(bestpanel1);
                 pictureBox3.Image = Image.FromFile(bestpanel2);
                 pictureBox4.Image = Image.FromFile(bestpanel3);
+                tourbutton1.Text = destination;
+                tourbutton2.Text = destination1;
+                tourbutton3.Text = destination2;
+                tourbutton4.Text = destination3;
             }
             catch (Exception ex)
             {
@@ -52,11 +62,7 @@ namespace TravelManagement
 
             }
         }
-
-        private void darjellingbutton_Click(object sender, EventArgs e)
-        {
-
-        }
+        
 
         private void right_Click(object sender, EventArgs e)
         {
@@ -126,9 +132,15 @@ namespace TravelManagement
                     con.Close();
                 }
 
-            }
+            } 
 
-           
+        }
+
+        private void tourbutton1_Click(object sender, EventArgs e)
+        {
+            panel1.Visible = false;
+            detail.Visible = true;
+            detail.BringToFront();
 
         }
     }

@@ -30,5 +30,10 @@ namespace TravelManagement
         {
 
         }
+
+        private void trekking_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -42,6 +42,7 @@ namespace TravelManagement
             this.trekking.Name = "trekking";
             this.trekking.Size = new System.Drawing.Size(769, 400);
             this.trekking.TabIndex = 0;
+            this.trekking.Load += new System.EventHandler(this.trekking_Load);
             // 
             // lastpanel
             // 

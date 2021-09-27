@@ -76,6 +76,12 @@
     <Compile Include="aboutususercontrol.Designer.cs">
       <DependentUpon>aboutususercontrol.cs</DependentUpon>
     </Compile>
+    <Compile Include="Admin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Admin.Designer.cs">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </Compile>
     <Compile Include="Contactus.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -242,6 +248,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="aboutususercontrol.resx">
       <DependentUpon>aboutususercontrol.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin.resx">
+      <DependentUpon>Admin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Contactus.resx">
       <DependentUpon>Contactus.cs</DependentUpon>
