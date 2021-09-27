@@ -31,7 +31,7 @@ namespace TravelManagement
             detaillabel.Size = new Size(900, 280);
             bookpanel.Location = new Point(270, 45);
             bookpanel.Size = new Size(400, 360);
-          //  Crossbutton.Location = new Point(780,10);
+        // // //  Crossbutton.Location = new Point(780,10);
         }
     }
 }
