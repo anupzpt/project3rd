@@ -50,8 +50,8 @@ namespace TravelManagement
             this.langtangbutton = new System.Windows.Forms.Button();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.guna2ShadowPanel1 = new Guna.UI2.WinForms.Guna2ShadowPanel();
-            this.left = new Guna.UI.WinForms.GunaImageButton();
             this.right = new Guna.UI.WinForms.GunaImageButton();
+            this.left = new Guna.UI.WinForms.GunaImageButton();
             this.detail = new TravelManagement.Detail();
             this.panel1.SuspendLayout();
             this.bestpanel1.SuspendLayout();
@@ -312,19 +312,6 @@ namespace TravelManagement
             this.guna2ShadowPanel1.Size = new System.Drawing.Size(878, 369);
             this.guna2ShadowPanel1.TabIndex = 14;
             // 
-            // left
-            // 
-            this.left.BackgroundImage = global::TravelManagement.Properties.Resources.chevron_left_50px;
-            this.left.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.left.Image = null;
-            this.left.ImageSize = new System.Drawing.Size(64, 64);
-            this.left.Location = new System.Drawing.Point(3, 148);
-            this.left.Name = "left";
-            this.left.OnHoverImage = null;
-            this.left.OnHoverImageOffset = new System.Drawing.Point(0, 0);
-            this.left.Size = new System.Drawing.Size(51, 49);
-            this.left.TabIndex = 1;
-            // 
             // right
             // 
             this.right.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -340,6 +327,19 @@ namespace TravelManagement
             this.right.OnHoverImageOffset = new System.Drawing.Point(0, 0);
             this.right.Size = new System.Drawing.Size(51, 49);
             this.right.TabIndex = 13;
+            // 
+            // left
+            // 
+            this.left.BackgroundImage = global::TravelManagement.Properties.Resources.chevron_left_50px;
+            this.left.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.left.Image = null;
+            this.left.ImageSize = new System.Drawing.Size(64, 64);
+            this.left.Location = new System.Drawing.Point(3, 148);
+            this.left.Name = "left";
+            this.left.OnHoverImage = null;
+            this.left.OnHoverImageOffset = new System.Drawing.Point(0, 0);
+            this.left.Size = new System.Drawing.Size(51, 49);
+            this.left.TabIndex = 1;
             // 
             // detail
             // 
