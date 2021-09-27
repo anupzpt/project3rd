@@ -21,7 +21,7 @@ namespace TravelManagement
         private void tour_Load(object sender, EventArgs e)
         {
             tourtext.Location = new Point(560, 150);
-            string SN = "2";
+            string SN = "1";
             SqlConnection con = new SqlConnection(MyGlobal.constring);
             string image = "Select * from imagetable where SN = '" + SN + "'";
             SqlDataAdapter sda = new SqlDataAdapter(image, con);
