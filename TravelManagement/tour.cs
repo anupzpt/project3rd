@@ -83,5 +83,10 @@ namespace TravelManagement
 
             }
         }
+
+        private void tourimagepanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

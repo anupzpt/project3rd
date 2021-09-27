@@ -22,7 +22,7 @@ namespace TravelManagement
         {
             string SN = "1";
             SqlConnection con = new SqlConnection(MyGlobal.constring);
-            string image="Select * from imagetable where SN = '"+ SN +"'";
+            string image="Select * from imagetable where SN = "+ SN ;
             SqlDataAdapter sda = new SqlDataAdapter(image, con);
             DataTable dt = new DataTable();
             sda.Fill(dt);

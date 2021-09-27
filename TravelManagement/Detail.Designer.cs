@@ -39,6 +39,7 @@ namespace TravelManagement
             this.gunaDateTimePicker1 = new Guna.UI.WinForms.GunaDateTimePicker();
             this.label9 = new System.Windows.Forms.Label();
             this.nametextbox = new System.Windows.Forms.TextBox();
+            this.Crossbutton = new Guna.UI2.WinForms.Guna2CircleButton();
             this.detaillabel = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.bunifuGradientPanel1 = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.label8 = new System.Windows.Forms.Label();
@@ -56,7 +57,6 @@ namespace TravelManagement
             this.photobutton = new Guna.UI.WinForms.GunaGradientButton();
             this.detailbutton = new Guna.UI.WinForms.GunaGradientButton();
             this.detailpanel = new System.Windows.Forms.Panel();
-            this.Crossbutton = new Guna.UI2.WinForms.Guna2CircleButton();
             this.detailshadowpanel.SuspendLayout();
             this.bookpanel.SuspendLayout();
             this.detaillabel.SuspendLayout();
@@ -76,12 +76,14 @@ namespace TravelManagement
             this.detailshadowpanel.Controls.Add(this.detaillabel);
             this.detailshadowpanel.Controls.Add(this.panel1);
             this.detailshadowpanel.FillColor = System.Drawing.Color.White;
-            this.detailshadowpanel.Location = new System.Drawing.Point(20, 3);
+            this.detailshadowpanel.Location = new System.Drawing.Point(27, 4);
+            this.detailshadowpanel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.detailshadowpanel.Name = "detailshadowpanel";
             this.detailshadowpanel.ShadowColor = System.Drawing.Color.DarkGreen;
             this.detailshadowpanel.ShadowDepth = 200;
-            this.detailshadowpanel.Size = new System.Drawing.Size(872, 426);
+            this.detailshadowpanel.Size = new System.Drawing.Size(1163, 524);
             this.detailshadowpanel.TabIndex = 14;
+            this.detailshadowpanel.Paint += new System.Windows.Forms.PaintEventHandler(this.detailshadowpanel_Paint);
             // 
             // bookpanel
             // 
@@ -99,10 +101,11 @@ namespace TravelManagement
             this.bookpanel.GradientBottomRight = System.Drawing.Color.LightSlateGray;
             this.bookpanel.GradientTopLeft = System.Drawing.Color.CadetBlue;
             this.bookpanel.GradientTopRight = System.Drawing.Color.Silver;
-            this.bookpanel.Location = new System.Drawing.Point(552, 14);
+            this.bookpanel.Location = new System.Drawing.Point(736, 17);
+            this.bookpanel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.bookpanel.Name = "bookpanel";
             this.bookpanel.Quality = 10;
-            this.bookpanel.Size = new System.Drawing.Size(300, 358);
+            this.bookpanel.Size = new System.Drawing.Size(400, 441);
             this.bookpanel.TabIndex = 7;
             // 
             // Bookbutton
@@ -115,12 +118,13 @@ namespace TravelManagement
             this.Bookbutton.BorderColor = System.Drawing.Color.Black;
             this.Bookbutton.DialogResult = System.Windows.Forms.DialogResult.None;
             this.Bookbutton.FocusedColor = System.Drawing.Color.Empty;
-            this.Bookbutton.Font = new System.Drawing.Font("Playfair Display", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Bookbutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Bookbutton.ForeColor = System.Drawing.Color.White;
             this.Bookbutton.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
             this.Bookbutton.Image = null;
             this.Bookbutton.ImageSize = new System.Drawing.Size(20, 20);
-            this.Bookbutton.Location = new System.Drawing.Point(159, 288);
+            this.Bookbutton.Location = new System.Drawing.Point(212, 354);
+            this.Bookbutton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Bookbutton.Name = "Bookbutton";
             this.Bookbutton.OnHoverBaseColor1 = System.Drawing.Color.Peru;
             this.Bookbutton.OnHoverBaseColor2 = System.Drawing.Color.BurlyWood;
@@ -129,7 +133,7 @@ namespace TravelManagement
             this.Bookbutton.OnHoverImage = null;
             this.Bookbutton.OnPressedColor = System.Drawing.Color.MistyRose;
             this.Bookbutton.Radius = 8;
-            this.Bookbutton.Size = new System.Drawing.Size(93, 43);
+            this.Bookbutton.Size = new System.Drawing.Size(124, 53);
             this.Bookbutton.TabIndex = 12;
             this.Bookbutton.Text = "BOOK";
             this.Bookbutton.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -139,10 +143,11 @@ namespace TravelManagement
             this.Quantity.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.Quantity.BackColor = System.Drawing.SystemColors.MenuBar;
-            this.Quantity.Location = new System.Drawing.Point(39, 248);
+            this.Quantity.Location = new System.Drawing.Point(52, 305);
+            this.Quantity.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Quantity.Multiline = true;
             this.Quantity.Name = "Quantity";
-            this.Quantity.Size = new System.Drawing.Size(238, 34);
+            this.Quantity.Size = new System.Drawing.Size(316, 41);
             this.Quantity.TabIndex = 7;
             this.Quantity.Text = "Quantity";
             // 
@@ -151,10 +156,11 @@ namespace TravelManagement
             this.Phone.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.Phone.BackColor = System.Drawing.SystemColors.MenuBar;
-            this.Phone.Location = new System.Drawing.Point(39, 105);
+            this.Phone.Location = new System.Drawing.Point(52, 129);
+            this.Phone.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Phone.Multiline = true;
             this.Phone.Name = "Phone";
-            this.Phone.Size = new System.Drawing.Size(238, 34);
+            this.Phone.Size = new System.Drawing.Size(316, 41);
             this.Phone.TabIndex = 6;
             this.Phone.Text = "Phone Number";
             // 
@@ -163,10 +169,11 @@ namespace TravelManagement
             this.Email.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.Email.BackColor = System.Drawing.SystemColors.MenuBar;
-            this.Email.Location = new System.Drawing.Point(39, 153);
+            this.Email.Location = new System.Drawing.Point(52, 188);
+            this.Email.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Email.Multiline = true;
             this.Email.Name = "Email";
-            this.Email.Size = new System.Drawing.Size(238, 34);
+            this.Email.Size = new System.Drawing.Size(316, 41);
             this.Email.TabIndex = 5;
             this.Email.Text = "Email";
             // 
@@ -181,7 +188,8 @@ namespace TravelManagement
             this.gunaDateTimePicker1.FocusedColor = System.Drawing.Color.White;
             this.gunaDateTimePicker1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.gunaDateTimePicker1.ForeColor = System.Drawing.Color.Black;
-            this.gunaDateTimePicker1.Location = new System.Drawing.Point(38, 201);
+            this.gunaDateTimePicker1.Location = new System.Drawing.Point(51, 247);
+            this.gunaDateTimePicker1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.gunaDateTimePicker1.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.gunaDateTimePicker1.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.gunaDateTimePicker1.Name = "gunaDateTimePicker1";
@@ -189,7 +197,7 @@ namespace TravelManagement
             this.gunaDateTimePicker1.OnHoverBorderColor = System.Drawing.Color.White;
             this.gunaDateTimePicker1.OnHoverForeColor = System.Drawing.Color.White;
             this.gunaDateTimePicker1.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaDateTimePicker1.Size = new System.Drawing.Size(237, 34);
+            this.gunaDateTimePicker1.Size = new System.Drawing.Size(316, 42);
             this.gunaDateTimePicker1.TabIndex = 4;
             this.gunaDateTimePicker1.Text = "Thursday, September 23, 2021";
             this.gunaDateTimePicker1.Value = new System.DateTime(2021, 9, 23, 20, 18, 57, 832);
@@ -199,11 +207,12 @@ namespace TravelManagement
             this.label9.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Playfair Display", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(46, 20);
+            this.label9.Location = new System.Drawing.Point(61, 25);
+            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(206, 28);
+            this.label9.Size = new System.Drawing.Size(277, 31);
             this.label9.TabIndex = 2;
             this.label9.Text = "BOOK YOUR TOUR";
             // 
@@ -212,12 +221,36 @@ namespace TravelManagement
             this.nametextbox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.nametextbox.BackColor = System.Drawing.SystemColors.MenuBar;
-            this.nametextbox.Location = new System.Drawing.Point(39, 58);
+            this.nametextbox.Location = new System.Drawing.Point(52, 71);
+            this.nametextbox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.nametextbox.Multiline = true;
             this.nametextbox.Name = "nametextbox";
-            this.nametextbox.Size = new System.Drawing.Size(238, 34);
+            this.nametextbox.Size = new System.Drawing.Size(316, 41);
             this.nametextbox.TabIndex = 0;
             this.nametextbox.Text = "Name";
+            // 
+            // Crossbutton
+            // 
+            this.Crossbutton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.Crossbutton.CheckedState.Parent = this.Crossbutton;
+            this.Crossbutton.CustomImages.Parent = this.Crossbutton;
+            this.Crossbutton.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.Crossbutton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.Crossbutton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.Crossbutton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.Crossbutton.DisabledState.Parent = this.Crossbutton;
+            this.Crossbutton.FillColor = System.Drawing.Color.Transparent;
+            this.Crossbutton.Font = new System.Drawing.Font("Franklin Gothic Demi", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Crossbutton.ForeColor = System.Drawing.Color.Red;
+            this.Crossbutton.HoverState.Parent = this.Crossbutton;
+            this.Crossbutton.Location = new System.Drawing.Point(1092, 5);
+            this.Crossbutton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Crossbutton.Name = "Crossbutton";
+            this.Crossbutton.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.Crossbutton.ShadowDecoration.Parent = this.Crossbutton;
+            this.Crossbutton.Size = new System.Drawing.Size(67, 43);
+            this.Crossbutton.TabIndex = 15;
+            this.Crossbutton.Text = "X";
             // 
             // detaillabel
             // 
@@ -229,10 +262,11 @@ namespace TravelManagement
             this.detaillabel.GradientBottomRight = System.Drawing.Color.MintCream;
             this.detaillabel.GradientTopLeft = System.Drawing.Color.White;
             this.detaillabel.GradientTopRight = System.Drawing.Color.Honeydew;
-            this.detaillabel.Location = new System.Drawing.Point(18, 59);
+            this.detaillabel.Location = new System.Drawing.Point(24, 73);
+            this.detaillabel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.detaillabel.Name = "detaillabel";
             this.detaillabel.Quality = 10;
-            this.detaillabel.Size = new System.Drawing.Size(562, 354);
+            this.detaillabel.Size = new System.Drawing.Size(749, 436);
             this.detaillabel.TabIndex = 6;
             // 
             // bunifuGradientPanel1
@@ -251,29 +285,32 @@ namespace TravelManagement
             this.bunifuGradientPanel1.GradientBottomRight = System.Drawing.Color.MintCream;
             this.bunifuGradientPanel1.GradientTopLeft = System.Drawing.Color.White;
             this.bunifuGradientPanel1.GradientTopRight = System.Drawing.Color.Honeydew;
-            this.bunifuGradientPanel1.Location = new System.Drawing.Point(37, 142);
+            this.bunifuGradientPanel1.Location = new System.Drawing.Point(49, 175);
+            this.bunifuGradientPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.bunifuGradientPanel1.Name = "bunifuGradientPanel1";
             this.bunifuGradientPanel1.Quality = 10;
-            this.bunifuGradientPanel1.Size = new System.Drawing.Size(422, 178);
+            this.bunifuGradientPanel1.Size = new System.Drawing.Size(563, 219);
             this.bunifuGradientPanel1.TabIndex = 7;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(206, 111);
+            this.label8.Location = new System.Drawing.Point(275, 137);
+            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(54, 20);
+            this.label8.Size = new System.Drawing.Size(67, 25);
             this.label8.TabIndex = 9;
             this.label8.Text = "Lodge";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Playfair Display", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(191, 66);
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(255, 81);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(160, 28);
+            this.label7.Size = new System.Drawing.Size(198, 31);
             this.label7.TabIndex = 8;
             this.label7.Text = "Accomodation";
             // 
@@ -281,19 +318,21 @@ namespace TravelManagement
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(206, 37);
+            this.label6.Location = new System.Drawing.Point(275, 46);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(209, 20);
+            this.label6.Size = new System.Drawing.Size(258, 25);
             this.label6.TabIndex = 7;
             this.label6.Text = "Private Vehicle or tourist bus";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Playfair Display", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(191, 0);
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(255, 0);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(115, 28);
+            this.label5.Size = new System.Drawing.Size(140, 31);
             this.label5.TabIndex = 6;
             this.label5.Text = "Transport";
             // 
@@ -301,19 +340,21 @@ namespace TravelManagement
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(19, 111);
+            this.label3.Location = new System.Drawing.Point(25, 137);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(45, 20);
+            this.label3.Size = new System.Drawing.Size(56, 25);
             this.label3.TabIndex = 5;
             this.label3.Text = "3000";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Playfair Display", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(3, 66);
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(4, 81);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(115, 28);
+            this.label4.Size = new System.Drawing.Size(140, 31);
             this.label4.TabIndex = 4;
             this.label4.Text = "Trip Price\n";
             // 
@@ -321,29 +362,32 @@ namespace TravelManagement
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(19, 37);
+            this.label2.Location = new System.Drawing.Point(25, 46);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(58, 20);
+            this.label2.Size = new System.Drawing.Size(73, 25);
             this.label2.TabIndex = 2;
             this.label2.Text = "5 Days";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Playfair Display", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(3, 0);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(4, 0);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(110, 28);
+            this.label1.Size = new System.Drawing.Size(133, 31);
             this.label1.TabIndex = 1;
             this.label1.Text = "Duration \r\n";
             // 
             // detailtext
             // 
             this.detailtext.AutoSize = true;
-            this.detailtext.Font = new System.Drawing.Font("Playfair Display", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.detailtext.Location = new System.Drawing.Point(0, 3);
+            this.detailtext.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.detailtext.Location = new System.Drawing.Point(0, 4);
+            this.detailtext.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.detailtext.Name = "detailtext";
-            this.detailtext.Size = new System.Drawing.Size(559, 130);
+            this.detailtext.Size = new System.Drawing.Size(687, 145);
             this.detailtext.TabIndex = 0;
             this.detailtext.Text = resources.GetString("detailtext.Text");
             // 
@@ -353,9 +397,10 @@ namespace TravelManagement
             this.panel1.Controls.Add(this.includebutton);
             this.panel1.Controls.Add(this.photobutton);
             this.panel1.Controls.Add(this.detailbutton);
-            this.panel1.Location = new System.Drawing.Point(15, 13);
+            this.panel1.Location = new System.Drawing.Point(20, 16);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(565, 45);
+            this.panel1.Size = new System.Drawing.Size(753, 55);
             this.panel1.TabIndex = 5;
             // 
             // excludebutton
@@ -372,7 +417,8 @@ namespace TravelManagement
             this.excludebutton.ForeColor = System.Drawing.Color.White;
             this.excludebutton.Image = null;
             this.excludebutton.ImageSize = new System.Drawing.Size(20, 20);
-            this.excludebutton.Location = new System.Drawing.Point(270, 1);
+            this.excludebutton.Location = new System.Drawing.Point(360, 1);
+            this.excludebutton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.excludebutton.Name = "excludebutton";
             this.excludebutton.OnHoverBaseColor1 = System.Drawing.Color.LightGray;
             this.excludebutton.OnHoverBaseColor2 = System.Drawing.Color.DarkGray;
@@ -381,7 +427,7 @@ namespace TravelManagement
             this.excludebutton.OnHoverImage = null;
             this.excludebutton.OnPressedColor = System.Drawing.SystemColors.ActiveCaption;
             this.excludebutton.Radius = 3;
-            this.excludebutton.Size = new System.Drawing.Size(116, 42);
+            this.excludebutton.Size = new System.Drawing.Size(155, 52);
             this.excludebutton.TabIndex = 8;
             this.excludebutton.Text = "EXCLUDE";
             this.excludebutton.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -400,7 +446,8 @@ namespace TravelManagement
             this.includebutton.ForeColor = System.Drawing.Color.White;
             this.includebutton.Image = null;
             this.includebutton.ImageSize = new System.Drawing.Size(20, 20);
-            this.includebutton.Location = new System.Drawing.Point(138, 1);
+            this.includebutton.Location = new System.Drawing.Point(184, 1);
+            this.includebutton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.includebutton.Name = "includebutton";
             this.includebutton.OnHoverBaseColor1 = System.Drawing.Color.LightGray;
             this.includebutton.OnHoverBaseColor2 = System.Drawing.Color.DarkGray;
@@ -409,7 +456,7 @@ namespace TravelManagement
             this.includebutton.OnHoverImage = null;
             this.includebutton.OnPressedColor = System.Drawing.SystemColors.ActiveCaption;
             this.includebutton.Radius = 3;
-            this.includebutton.Size = new System.Drawing.Size(116, 42);
+            this.includebutton.Size = new System.Drawing.Size(155, 52);
             this.includebutton.TabIndex = 7;
             this.includebutton.Text = "INCLUDE";
             this.includebutton.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -428,7 +475,8 @@ namespace TravelManagement
             this.photobutton.ForeColor = System.Drawing.Color.White;
             this.photobutton.Image = null;
             this.photobutton.ImageSize = new System.Drawing.Size(20, 20);
-            this.photobutton.Location = new System.Drawing.Point(401, 1);
+            this.photobutton.Location = new System.Drawing.Point(535, 1);
+            this.photobutton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.photobutton.Name = "photobutton";
             this.photobutton.OnHoverBaseColor1 = System.Drawing.Color.LightGray;
             this.photobutton.OnHoverBaseColor2 = System.Drawing.Color.DarkGray;
@@ -437,7 +485,7 @@ namespace TravelManagement
             this.photobutton.OnHoverImage = null;
             this.photobutton.OnPressedColor = System.Drawing.SystemColors.ActiveCaption;
             this.photobutton.Radius = 3;
-            this.photobutton.Size = new System.Drawing.Size(116, 42);
+            this.photobutton.Size = new System.Drawing.Size(155, 52);
             this.photobutton.TabIndex = 6;
             this.photobutton.Text = "PHOTOS";
             this.photobutton.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -456,7 +504,8 @@ namespace TravelManagement
             this.detailbutton.ForeColor = System.Drawing.Color.White;
             this.detailbutton.Image = null;
             this.detailbutton.ImageSize = new System.Drawing.Size(20, 20);
-            this.detailbutton.Location = new System.Drawing.Point(7, 1);
+            this.detailbutton.Location = new System.Drawing.Point(9, 1);
+            this.detailbutton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.detailbutton.Name = "detailbutton";
             this.detailbutton.OnHoverBaseColor1 = System.Drawing.Color.LightGray;
             this.detailbutton.OnHoverBaseColor2 = System.Drawing.Color.DarkGray;
@@ -465,7 +514,7 @@ namespace TravelManagement
             this.detailbutton.OnHoverImage = null;
             this.detailbutton.OnPressedColor = System.Drawing.SystemColors.ActiveCaption;
             this.detailbutton.Radius = 3;
-            this.detailbutton.Size = new System.Drawing.Size(116, 42);
+            this.detailbutton.Size = new System.Drawing.Size(155, 52);
             this.detailbutton.TabIndex = 5;
             this.detailbutton.Text = "DETAIL";
             this.detailbutton.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -478,41 +527,21 @@ namespace TravelManagement
             this.detailpanel.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.detailpanel.Controls.Add(this.detailshadowpanel);
             this.detailpanel.Location = new System.Drawing.Point(0, 0);
+            this.detailpanel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.detailpanel.Name = "detailpanel";
-            this.detailpanel.Size = new System.Drawing.Size(931, 432);
+            this.detailpanel.Size = new System.Drawing.Size(1241, 532);
             this.detailpanel.TabIndex = 2;
             this.detailpanel.Paint += new System.Windows.Forms.PaintEventHandler(this.detailpanel_Paint);
             // 
-            // Crossbutton
-            // 
-            this.Crossbutton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.Crossbutton.CheckedState.Parent = this.Crossbutton;
-            this.Crossbutton.CustomImages.Parent = this.Crossbutton;
-            this.Crossbutton.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.Crossbutton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.Crossbutton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.Crossbutton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.Crossbutton.DisabledState.Parent = this.Crossbutton;
-            this.Crossbutton.FillColor = System.Drawing.Color.Transparent;
-            this.Crossbutton.Font = new System.Drawing.Font("Franklin Gothic Demi", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Crossbutton.ForeColor = System.Drawing.Color.Red;
-            this.Crossbutton.HoverState.Parent = this.Crossbutton;
-            this.Crossbutton.Location = new System.Drawing.Point(819, 4);
-            this.Crossbutton.Name = "Crossbutton";
-            this.Crossbutton.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.Crossbutton.ShadowDecoration.Parent = this.Crossbutton;
-            this.Crossbutton.Size = new System.Drawing.Size(50, 35);
-            this.Crossbutton.TabIndex = 15;
-            this.Crossbutton.Text = "X";
-            // 
             // Detail
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.detailpanel);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Detail";
-            this.Size = new System.Drawing.Size(931, 435);
+            this.Size = new System.Drawing.Size(1241, 535);
             this.Load += new System.EventHandler(this.Detail_Load);
             this.detailshadowpanel.ResumeLayout(false);
             this.bookpanel.ResumeLayout(false);
