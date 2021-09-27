@@ -24,6 +24,14 @@ namespace TravelManagement
             bestpanel2.Location = new Point(400, 100);
             bestpanel3.Location = new Point(700, 100);
             bestpanel4.Location = new Point(1000, 100);
+            detail.Visible = false;
+        }
+
+        private void specialbutton1_Click(object sender, EventArgs e)
+        {
+            panel2.Visible = false;
+            detail.Visible = true;
+            detail.BringToFront();
         }
     }
 }

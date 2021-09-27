@@ -43,7 +43,7 @@ namespace TravelManagement
 
         private void mardihimaltrekbutton_Click(object sender, EventArgs e)
         {
-            backcoverpanel.Visible = false;
+         //   backcoverpanel.Visible = false;
             detail.Visible = true;
             detail.BringToFront();
         }

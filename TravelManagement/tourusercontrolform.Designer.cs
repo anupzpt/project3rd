@@ -60,6 +60,7 @@ namespace TravelManagement
             this.tour.Name = "tour";
             this.tour.Size = new System.Drawing.Size(840, 400);
             this.tour.TabIndex = 0;
+            this.tour.Load += new System.EventHandler(this.tour_Load);
             // 
             // tourusercontrolform
             // 
