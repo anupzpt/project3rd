@@ -40,6 +40,10 @@ namespace TravelManagement
                 string destination1 = dt.Rows[1]["Location"].ToString();
                 string destination2 = dt.Rows[2]["Location"].ToString();
                 string destination3 = dt.Rows[3]["Location"].ToString();
+                string label =dt.Rows[0]["Pricelabel"].ToString();
+                string label1 = dt.Rows[1]["Pricelabel"].ToString();
+                string label2 = dt.Rows[2]["Pricelabel"].ToString();
+                string label3 = dt.Rows[3]["Pricelabel"].ToString();
                 string bestpanel = dt.Rows[0]["Picture"].ToString();
                 string bestpanel1 = dt.Rows[1]["Picture"].ToString();
                 string bestpanel2 = dt.Rows[2]["Picture"].ToString();
@@ -52,6 +56,11 @@ namespace TravelManagement
                 tourbutton2.Text = destination1;
                 tourbutton3.Text = destination2;
                 tourbutton4.Text = destination3;
+                tourlabel1.Text = label;
+                tourlabel2.Text = label1;
+                tourlabel3.Text = label2;
+                tourlabel4.Text = label3;
+
             }
             catch (Exception ex)
             {
@@ -75,30 +84,44 @@ namespace TravelManagement
                     con.Open();
                     
                      string image = "Select * from changepanel";
-                        SqlDataAdapter sda = new SqlDataAdapter(image, con);
-                        DataTable dt = new DataTable();
-                        sda.Fill(dt);
-                        string bestpanel = dt.Rows[SN]["Picture"].ToString();
-                        if (count == 1)
+                     SqlDataAdapter sda = new SqlDataAdapter(image, con);
+                     DataTable dt = new DataTable();
+                     sda.Fill(dt);
+                     string bestpanel = dt.Rows[SN]["Picture"].ToString();
+                     string destination = dt.Rows[SN]["Location"].ToString();
+                     string label = dt.Rows[SN]["Pricelabel"].ToString();
+
+                    if (count == 1)
                         {
                             SN = SN + 1;
                             pictureBox1.Image = Image.FromFile(bestpanel);
-                        }
+                            tourbutton1.Text = destination;
+                            tourlabel1.Text = label;
+                    }
                         if (count == 2)
                         {
                             SN = SN + 1;
                             pictureBox2.Image = Image.FromFile(bestpanel);
-                        }
-                        if (count == 3)
+                        tourbutton2.Text = destination;
+                        tourlabel2.Text = label;
+
+                    }
+                    if (count == 3)
                         {
                             SN = SN + 1;
                             pictureBox3.Image = Image.FromFile(bestpanel);
-                        }
-                        if (count == 4)
+                        tourbutton3.Text = destination;
+                        tourlabel3.Text = label;
+
+                    }
+                    if (count == 4)
                         {
                             SN = SN + 1;
                             pictureBox4.Image = Image.FromFile(bestpanel);
-                            count = 1;
+                        tourbutton4.Text = destination;
+                        tourlabel4.Text = label;
+
+                        count = 1;
                         }
                         count++;
                 }

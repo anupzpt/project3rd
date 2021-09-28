@@ -49,7 +49,7 @@ namespace TravelManagement
             | System.Windows.Forms.AnchorStyles.Right)));
             this.specialdetail.Location = new System.Drawing.Point(0, 0);
             this.specialdetail.Name = "specialdetail";
-            this.specialdetail.Size = new System.Drawing.Size(931, 420);
+            this.specialdetail.Size = new System.Drawing.Size(769, 400);
             this.specialdetail.TabIndex = 1;
             // 
             // lastpanel
@@ -70,7 +70,7 @@ namespace TravelManagement
             this.Controls.Add(this.lastpanel);
             this.Controls.Add(this.specialdetail);
             this.Name = "Specialusercontrol";
-            this.Size = new System.Drawing.Size(840, 445);
+            this.Size = new System.Drawing.Size(840, 400);
             this.Load += new System.EventHandler(this.Specialusercontrol_Load);
             this.ResumeLayout(false);
 
