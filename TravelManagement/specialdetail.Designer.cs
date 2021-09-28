@@ -50,6 +50,7 @@ namespace TravelManagement
             this.specialbutton1 = new System.Windows.Forms.Button();
             this.guna2ShadowPanel2 = new Guna.UI2.WinForms.Guna2ShadowPanel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.left = new Guna.UI.WinForms.GunaImageButton();
             this.backcoverpanel.SuspendLayout();
             this.panel2.SuspendLayout();
             this.bestpanel4.SuspendLayout();
@@ -59,6 +60,7 @@ namespace TravelManagement
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.guna2ShadowPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -284,6 +286,7 @@ namespace TravelManagement
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.guna2ShadowPanel2.BackColor = System.Drawing.Color.Transparent;
+            this.guna2ShadowPanel2.Controls.Add(this.left);
             this.guna2ShadowPanel2.FillColor = System.Drawing.Color.White;
             this.guna2ShadowPanel2.Location = new System.Drawing.Point(20, 20);
             this.guna2ShadowPanel2.Name = "guna2ShadowPanel2";
@@ -301,6 +304,20 @@ namespace TravelManagement
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 12;
             this.pictureBox1.TabStop = false;
+            // 
+            // left
+            // 
+            this.left.BackgroundImage = global::TravelManagement.Properties.Resources.chevron_left_50px;
+            this.left.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.left.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.left.Image = null;
+            this.left.ImageSize = new System.Drawing.Size(64, 64);
+            this.left.Location = new System.Drawing.Point(375, 176);
+            this.left.Name = "left";
+            this.left.OnHoverImage = null;
+            this.left.OnHoverImageOffset = new System.Drawing.Point(0, 0);
+            this.left.Size = new System.Drawing.Size(51, 49);
+            this.left.TabIndex = 14;
             // 
             // specialdetail
             // 
@@ -324,6 +341,7 @@ namespace TravelManagement
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.guna2ShadowPanel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
@@ -351,5 +369,6 @@ namespace TravelManagement
         private System.Windows.Forms.Button specialbutton1;
         private Guna.UI2.WinForms.Guna2ShadowPanel guna2ShadowPanel2;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private Guna.UI.WinForms.GunaImageButton left;
     }
 }

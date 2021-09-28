@@ -562,5 +562,8 @@
   <ItemGroup>
     <None Include="Resources\left.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="sql\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

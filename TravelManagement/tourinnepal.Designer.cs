@@ -143,7 +143,7 @@ namespace TravelManagement
             this.left.DialogResult = System.Windows.Forms.DialogResult.None;
             this.left.Image = null;
             this.left.ImageSize = new System.Drawing.Size(64, 64);
-            this.left.Location = new System.Drawing.Point(3, 148);
+            this.left.Location = new System.Drawing.Point(3, 10);
             this.left.Name = "left";
             this.left.OnHoverImage = null;
             this.left.OnHoverImageOffset = new System.Drawing.Point(0, 0);
