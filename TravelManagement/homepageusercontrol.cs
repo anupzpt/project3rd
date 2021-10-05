@@ -23,8 +23,8 @@ namespace TravelManagement
             search.Location = new Point(0, 492);
             search.Size = new Size(840, 205);
             explorenepal.Location = new Point(0, 700);
-            explorenepal.Size = new Size(900, 400);
-            hiking.Location = new Point(0, 1100);
+            explorenepal.Size = new Size(900, 1100);
+            hiking.Location = new Point(0, 1150);
             hiking.Size = new Size(900, 400);
             rara.Location = new Point(0, 1510);
             rara.Size = new Size(840, 261);

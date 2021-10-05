@@ -47,13 +47,14 @@ namespace TravelManagement
             this.loginbutton2 = new Guna.UI2.WinForms.Guna2CircleButton();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.adminfrontpage = new TravelManagement.adminfrontpage();
             this.homepageusercontrol = new TravelManagement.Homepageusercontrol();
-            this.login = new TravelManagement.login();
             this.trekkingusercontrol = new TravelManagement.trekkingusercontrol();
             this.specialusercontrol = new TravelManagement.Specialusercontrol();
             this.contactusercontrol = new TravelManagement.contactusercontrol();
             this.tourusercontrolform = new TravelManagement.tourusercontrolform();
             this.aboutususercontrol = new TravelManagement.aboutususercontrol();
+            this.login = new TravelManagement.login();
             this.guna2Panel2.SuspendLayout();
             this.guna2Panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
@@ -343,17 +344,28 @@ namespace TravelManagement
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Controls.Add(this.login);
+            this.panel1.Controls.Add(this.adminfrontpage);
             this.panel1.Controls.Add(this.homepageusercontrol);
             this.panel1.Controls.Add(this.trekkingusercontrol);
             this.panel1.Controls.Add(this.specialusercontrol);
             this.panel1.Controls.Add(this.contactusercontrol);
             this.panel1.Controls.Add(this.tourusercontrolform);
             this.panel1.Controls.Add(this.aboutususercontrol);
+            this.panel1.Controls.Add(this.login);
             this.panel1.Location = new System.Drawing.Point(-1, 146);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(840, 307);
             this.panel1.TabIndex = 2;
+            // 
+            // adminfrontpage
+            // 
+            this.adminfrontpage.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.adminfrontpage.Location = new System.Drawing.Point(0, 0);
+            this.adminfrontpage.Name = "adminfrontpage";
+            this.adminfrontpage.Size = new System.Drawing.Size(900, 471);
+            this.adminfrontpage.TabIndex = 20;
             // 
             // homepageusercontrol
             // 
@@ -365,15 +377,6 @@ namespace TravelManagement
             this.homepageusercontrol.Name = "homepageusercontrol";
             this.homepageusercontrol.Size = new System.Drawing.Size(840, 400);
             this.homepageusercontrol.TabIndex = 16;
-            // 
-            // login
-            // 
-            this.login.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.login.BackColor = System.Drawing.Color.Silver;
-            this.login.Location = new System.Drawing.Point(443, 0);
-            this.login.Name = "login";
-            this.login.Size = new System.Drawing.Size(380, 355);
-            this.login.TabIndex = 7;
             // 
             // trekkingusercontrol
             // 
@@ -430,6 +433,15 @@ namespace TravelManagement
             this.aboutususercontrol.Size = new System.Drawing.Size(840, 400);
             this.aboutususercontrol.TabIndex = 19;
             // 
+            // login
+            // 
+            this.login.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.login.BackColor = System.Drawing.Color.Silver;
+            this.login.Location = new System.Drawing.Point(443, 0);
+            this.login.Name = "login";
+            this.login.Size = new System.Drawing.Size(380, 355);
+            this.login.TabIndex = 7;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -477,6 +489,7 @@ namespace TravelManagement
         private Specialusercontrol specialusercontrol;
         private contactusercontrol contactusercontrol;
         private aboutususercontrol aboutususercontrol;
+        private adminfrontpage adminfrontpage;
     }
 }
 

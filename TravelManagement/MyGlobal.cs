@@ -13,6 +13,8 @@ namespace TravelManagement
         //shreeya
         public static string constring = @"Data Source=.\SQLEXPRESS;Initial Catalog=travelmanagement;Integrated Security=True";
         //public static string constring = @"Data Source=LAPTOP-9S8UJ0K4\SQLEXPRESS;Integrated Security=True";
-
+        public static int SN;
+        public static int admininfo;
     }
+    
 }

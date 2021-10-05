@@ -70,7 +70,7 @@ namespace TravelManagement
             | System.Windows.Forms.AnchorStyles.Right)));
             this.explorenepal.Location = new System.Drawing.Point(0, 0);
             this.explorenepal.Name = "explorenepal";
-            this.explorenepal.Size = new System.Drawing.Size(872, 376);
+            this.explorenepal.Size = new System.Drawing.Size(840, 400);
             this.explorenepal.TabIndex = 2;
             // 
             // search

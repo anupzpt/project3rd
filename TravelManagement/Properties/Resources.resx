@@ -133,8 +133,8 @@
   <data name="upper-mustang-trek" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\upper-mustang-trek.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="muktinath" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\muktinath.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="abc1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\abc1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="secured_letter_26px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\secured_letter_26px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -214,6 +214,9 @@
   <data name="images" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\images.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="london" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\london.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="locked" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\locked.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -244,6 +247,9 @@
   <data name="phone" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\phone.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="peaceful_lake_wallpaper_landscape_nature_wallpaper_1208" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\peaceful_lake_wallpaper_landscape_nature_wallpaper_1208.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="lumbini" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\lumbini.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -259,8 +265,14 @@
   <data name="Fewa-Lake-Pokhara-Nepal-880x448" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Fewa-Lake-Pokhara-Nepal-880x448.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="chris-karidis-nnzkZNYWHaU-unsplash1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\chris-karidis-nnzkZNYWHaU-unsplash1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Prayer_flags_1_687x4781" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Prayer_flags_1_687x4781.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="admin" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\admin.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="instagram_32px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\instagram_32px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -277,11 +289,11 @@
   <data name="maldives" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\maldives.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="chris-karidis-nnzkZNYWHaU-unsplash1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\chris-karidis-nnzkZNYWHaU-unsplash1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="hompageimage1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hompageimage.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="peaceful_lake_wallpaper_landscape_nature_wallpaper_1208" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\peaceful_lake_wallpaper_landscape_nature_wallpaper_1208.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="muktinath" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\muktinath.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="marcin-nowak-iXqTqC-f6jI-unsplash" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\marcin-nowak-iXqTqC-f6jI-unsplash.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -289,14 +301,11 @@
   <data name="trekking2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\trekking2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="gropani" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\gropani.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="paul-gilmore-km74CLco7qs-unsplash" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\paul-gilmore-km74CLco7qs-unsplash.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="abc1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\abc1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="gropani" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\gropani.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="cell_phone_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\cell_phone_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -313,6 +322,9 @@
   <data name="jake-givens-ocwmWiNAWGs-unsplash" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\jake-givens-ocwmWiNAWGs-unsplash.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="ahokpillar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ahokpillar.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="simon-english-48nerZQCHgo-unsplash" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\simon-english-48nerZQCHgo-unsplash.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -321,6 +333,9 @@
   </data>
   <data name="balaji-srinivasan-Q-MPJF7MbAI-unsplash" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\balaji-srinivasan-Q-MPJF7MbAI-unsplash.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="left" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\left.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="chevron_left_50px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\chevron_left_50px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -334,7 +349,7 @@
   <data name="download" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\download.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="left" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\left.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="file_16px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\file_16px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

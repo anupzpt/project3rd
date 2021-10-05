@@ -59,21 +59,52 @@ namespace TravelManagement
                 speciallabel3.Text = label2;
                 speciallabel4.Text = label3;
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
 
             }
             finally
             {
-
+                con.Close();
             }
         }
 
         private void specialbutton1_Click(object sender, EventArgs e)
         {
-            panel2.Visible = false;
             detail.Visible = true;
             detail.BringToFront();
+            Crossbutton.Visible = true;
+            Crossbutton.BringToFront();
+        }
+
+        private void specialbutton2_Click(object sender, EventArgs e)
+        {
+            detail.Visible = true;
+            detail.BringToFront();
+            Crossbutton.Visible = true;
+            Crossbutton.BringToFront();
+        }
+
+        private void specialbutton3_Click(object sender, EventArgs e)
+        {
+            detail.Visible = true;
+            detail.BringToFront();
+            Crossbutton.Visible = true;
+            Crossbutton.BringToFront();
+        }
+
+        private void specialbutton4_Click(object sender, EventArgs e)
+        {
+            detail.Visible = true;
+            detail.BringToFront();
+            Crossbutton.Visible = true;
+            Crossbutton.BringToFront();
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+            Crossbutton.Visible = false;
+
         }
     }
 }

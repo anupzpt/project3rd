@@ -16,5 +16,25 @@ namespace TravelManagement
         {
             InitializeComponent();
         }
+
+        private void Add_Click(object sender, EventArgs e)
+        {
+            adminupdate.Visible = false;
+            admindelete.Visible = false;
+        }
+
+        private void Updatebutton_Click(object sender, EventArgs e)
+        {
+            adminadd.Visible = false;
+            admindelete.Visible = false;
+        }
+
+        private void Deletebutton_Click(object sender, EventArgs e)
+        {
+           adminadd.Visible = false;
+            adminupdate.Visible = false;
+            admindelete.Visible = true;
+            admindelete.BringToFront();
+        }
     }
 }

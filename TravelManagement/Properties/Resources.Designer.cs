@@ -103,6 +103,26 @@ namespace TravelManagement.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap admin {
+            get {
+                object obj = ResourceManager.GetObject("admin", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ahokpillar {
+            get {
+                object obj = ResourceManager.GetObject("ahokpillar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap balaji_srinivasan_Q_MPJF7MbAI_unsplash {
             get {
                 object obj = ResourceManager.GetObject("balaji-srinivasan-Q-MPJF7MbAI-unsplash", resourceCulture);
@@ -263,6 +283,16 @@ namespace TravelManagement.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap file_16px {
+            get {
+                object obj = ResourceManager.GetObject("file_16px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap gorkha {
             get {
                 object obj = ResourceManager.GetObject("gorkha", resourceCulture);
@@ -306,6 +336,16 @@ namespace TravelManagement.Properties {
         internal static System.Drawing.Bitmap hompageimage {
             get {
                 object obj = ResourceManager.GetObject("hompageimage", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap hompageimage1 {
+            get {
+                object obj = ResourceManager.GetObject("hompageimage1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -426,6 +466,16 @@ namespace TravelManagement.Properties {
         internal static System.Drawing.Bitmap logo {
             get {
                 object obj = ResourceManager.GetObject("logo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap london {
+            get {
+                object obj = ResourceManager.GetObject("london", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

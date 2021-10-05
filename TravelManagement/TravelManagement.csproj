@@ -8,10 +8,11 @@
     <OutputType>WinExe</OutputType>
     <RootNamespace>TravelManagement</RootNamespace>
     <AssemblyName>TravelManagement</AssemblyName>
-    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -84,6 +85,30 @@
     </Compile>
     <Compile Include="Admin.Designer.cs">
       <DependentUpon>Admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminadd.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="adminadd.Designer.cs">
+      <DependentUpon>adminadd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="admindelete.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="admindelete.Designer.cs">
+      <DependentUpon>admindelete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminfrontpage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="adminfrontpage.Designer.cs">
+      <DependentUpon>adminfrontpage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminupdate.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="adminupdate.Designer.cs">
+      <DependentUpon>adminupdate.cs</DependentUpon>
     </Compile>
     <Compile Include="Contactus.cs">
       <SubType>UserControl</SubType>
@@ -254,6 +279,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Admin.resx">
       <DependentUpon>Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminadd.resx">
+      <DependentUpon>adminadd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admindelete.resx">
+      <DependentUpon>admindelete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminfrontpage.resx">
+      <DependentUpon>adminfrontpage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminupdate.resx">
+      <DependentUpon>adminupdate.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Contactus.resx">
       <DependentUpon>Contactus.cs</DependentUpon>
@@ -564,6 +601,18 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="sql\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\admin.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ahokpillar.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\london.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_16px.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
