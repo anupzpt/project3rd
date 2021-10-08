@@ -29,25 +29,31 @@ namespace TravelManagement
         /// </summary>
         private void InitializeComponent()
         {
+            this.backcoverpanel = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.bestpanel4 = new System.Windows.Forms.Panel();
-            this.label5 = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
+            this.hikelabel4 = new System.Windows.Forms.Label();
+            this.hikebutton4 = new System.Windows.Forms.Button();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.bestpanel2 = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.hikelabel2 = new System.Windows.Forms.Label();
+            this.hikebutton2 = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.bestpanel3 = new System.Windows.Forms.Panel();
-            this.label4 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
+            this.hikelabel3 = new System.Windows.Forms.Label();
+            this.hikebutton3 = new System.Windows.Forms.Button();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.nepaltour = new System.Windows.Forms.Label();
             this.hike = new System.Windows.Forms.Label();
             this.bestpanel1 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.Chitwan = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.Crossbutton = new System.Windows.Forms.Button();
+            this.hikebutton1 = new System.Windows.Forms.Button();
+            this.hikelabel1 = new System.Windows.Forms.Label();
+            this.detail = new TravelManagement.Detail();
+            this.right = new Guna.UI.WinForms.GunaImageButton();
+            this.left = new Guna.UI.WinForms.GunaImageButton();
+            this.backcoverpanel.SuspendLayout();
             this.panel1.SuspendLayout();
             this.bestpanel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -59,6 +65,19 @@ namespace TravelManagement
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
+            // backcoverpanel
+            // 
+            this.backcoverpanel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.backcoverpanel.Controls.Add(this.panel1);
+            this.backcoverpanel.Controls.Add(this.Crossbutton);
+            this.backcoverpanel.Controls.Add(this.detail);
+            this.backcoverpanel.Location = new System.Drawing.Point(0, 0);
+            this.backcoverpanel.Name = "backcoverpanel";
+            this.backcoverpanel.Size = new System.Drawing.Size(931, 431);
+            this.backcoverpanel.TabIndex = 0;
+            // 
             // panel1
             // 
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -66,50 +85,54 @@ namespace TravelManagement
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BackgroundImage = global::TravelManagement.Properties.Resources.mountain1;
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel1.Controls.Add(this.left);
             this.panel1.Controls.Add(this.bestpanel4);
             this.panel1.Controls.Add(this.bestpanel2);
+            this.panel1.Controls.Add(this.right);
             this.panel1.Controls.Add(this.bestpanel3);
             this.panel1.Controls.Add(this.nepaltour);
             this.panel1.Controls.Add(this.hike);
             this.panel1.Controls.Add(this.bestpanel1);
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(931, 376);
-            this.panel1.TabIndex = 1;
+            this.panel1.Size = new System.Drawing.Size(931, 430);
+            this.panel1.TabIndex = 11;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // bestpanel4
             // 
-            this.bestpanel4.Controls.Add(this.label5);
-            this.bestpanel4.Controls.Add(this.button3);
+            this.bestpanel4.Controls.Add(this.hikelabel4);
+            this.bestpanel4.Controls.Add(this.hikebutton4);
             this.bestpanel4.Controls.Add(this.pictureBox4);
             this.bestpanel4.Location = new System.Drawing.Point(756, 72);
             this.bestpanel4.Name = "bestpanel4";
             this.bestpanel4.Size = new System.Drawing.Size(242, 249);
             this.bestpanel4.TabIndex = 13;
             // 
-            // label5
+            // hikelabel4
             // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.Gainsboro;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.Maroon;
-            this.label5.Location = new System.Drawing.Point(10, 218);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(92, 20);
-            this.label5.TabIndex = 10;
-            this.label5.Text = "NRS 15000";
+            this.hikelabel4.AutoSize = true;
+            this.hikelabel4.BackColor = System.Drawing.Color.Gainsboro;
+            this.hikelabel4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.hikelabel4.ForeColor = System.Drawing.Color.Maroon;
+            this.hikelabel4.Location = new System.Drawing.Point(10, 218);
+            this.hikelabel4.Name = "hikelabel4";
+            this.hikelabel4.Size = new System.Drawing.Size(92, 20);
+            this.hikelabel4.TabIndex = 10;
+            this.hikelabel4.Text = "NRS 15000";
             // 
-            // button3
+            // hikebutton4
             // 
-            this.button3.BackColor = System.Drawing.Color.Gainsboro;
-            this.button3.Font = new System.Drawing.Font("Playfair Display", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(0, 193);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(242, 56);
-            this.button3.TabIndex = 11;
-            this.button3.Text = "POON HILL TREK";
-            this.button3.TextAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button3.UseVisualStyleBackColor = false;
+            this.hikebutton4.BackColor = System.Drawing.Color.Gainsboro;
+            this.hikebutton4.Font = new System.Drawing.Font("Playfair Display", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.hikebutton4.Location = new System.Drawing.Point(0, 193);
+            this.hikebutton4.Name = "hikebutton4";
+            this.hikebutton4.Size = new System.Drawing.Size(242, 56);
+            this.hikebutton4.TabIndex = 11;
+            this.hikebutton4.Text = "POON HILL TREK";
+            this.hikebutton4.TextAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.hikebutton4.UseVisualStyleBackColor = false;
+            this.hikebutton4.Click += new System.EventHandler(this.hikebutton4_Click);
             // 
             // pictureBox4
             // 
@@ -124,37 +147,38 @@ namespace TravelManagement
             // 
             // bestpanel2
             // 
-            this.bestpanel2.Controls.Add(this.label3);
-            this.bestpanel2.Controls.Add(this.button1);
+            this.bestpanel2.Controls.Add(this.hikelabel2);
+            this.bestpanel2.Controls.Add(this.hikebutton2);
             this.bestpanel2.Controls.Add(this.pictureBox2);
             this.bestpanel2.Location = new System.Drawing.Point(260, 72);
             this.bestpanel2.Name = "bestpanel2";
             this.bestpanel2.Size = new System.Drawing.Size(242, 249);
             this.bestpanel2.TabIndex = 12;
             // 
-            // label3
+            // hikelabel2
             // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Gainsboro;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.Maroon;
-            this.label3.Location = new System.Drawing.Point(10, 218);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(92, 20);
-            this.label3.TabIndex = 10;
-            this.label3.Text = "NRS 15000";
+            this.hikelabel2.AutoSize = true;
+            this.hikelabel2.BackColor = System.Drawing.Color.Gainsboro;
+            this.hikelabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.hikelabel2.ForeColor = System.Drawing.Color.Maroon;
+            this.hikelabel2.Location = new System.Drawing.Point(10, 218);
+            this.hikelabel2.Name = "hikelabel2";
+            this.hikelabel2.Size = new System.Drawing.Size(92, 20);
+            this.hikelabel2.TabIndex = 10;
+            this.hikelabel2.Text = "NRS 15000";
             // 
-            // button1
+            // hikebutton2
             // 
-            this.button1.BackColor = System.Drawing.Color.Gainsboro;
-            this.button1.Font = new System.Drawing.Font("Playfair Display", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(0, 193);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(242, 56);
-            this.button1.TabIndex = 11;
-            this.button1.Text = "GOSAIKUNDA TREK";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button1.UseVisualStyleBackColor = false;
+            this.hikebutton2.BackColor = System.Drawing.Color.Gainsboro;
+            this.hikebutton2.Font = new System.Drawing.Font("Playfair Display", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.hikebutton2.Location = new System.Drawing.Point(0, 193);
+            this.hikebutton2.Name = "hikebutton2";
+            this.hikebutton2.Size = new System.Drawing.Size(242, 56);
+            this.hikebutton2.TabIndex = 11;
+            this.hikebutton2.Text = "GOSAIKUNDA TREK";
+            this.hikebutton2.TextAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.hikebutton2.UseVisualStyleBackColor = false;
+            this.hikebutton2.Click += new System.EventHandler(this.hikebutton2_Click);
             // 
             // pictureBox2
             // 
@@ -169,37 +193,38 @@ namespace TravelManagement
             // 
             // bestpanel3
             // 
-            this.bestpanel3.Controls.Add(this.label4);
-            this.bestpanel3.Controls.Add(this.button2);
+            this.bestpanel3.Controls.Add(this.hikelabel3);
+            this.bestpanel3.Controls.Add(this.hikebutton3);
             this.bestpanel3.Controls.Add(this.pictureBox3);
             this.bestpanel3.Location = new System.Drawing.Point(508, 72);
             this.bestpanel3.Name = "bestpanel3";
             this.bestpanel3.Size = new System.Drawing.Size(242, 249);
             this.bestpanel3.TabIndex = 12;
             // 
-            // label4
+            // hikelabel3
             // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Gainsboro;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.Maroon;
-            this.label4.Location = new System.Drawing.Point(10, 218);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(92, 20);
-            this.label4.TabIndex = 10;
-            this.label4.Text = "NRS 15000";
+            this.hikelabel3.AutoSize = true;
+            this.hikelabel3.BackColor = System.Drawing.Color.Gainsboro;
+            this.hikelabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.hikelabel3.ForeColor = System.Drawing.Color.Maroon;
+            this.hikelabel3.Location = new System.Drawing.Point(10, 218);
+            this.hikelabel3.Name = "hikelabel3";
+            this.hikelabel3.Size = new System.Drawing.Size(92, 20);
+            this.hikelabel3.TabIndex = 10;
+            this.hikelabel3.Text = "NRS 15000";
             // 
-            // button2
+            // hikebutton3
             // 
-            this.button2.BackColor = System.Drawing.Color.Gainsboro;
-            this.button2.Font = new System.Drawing.Font("Playfair Display", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(0, 193);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(242, 56);
-            this.button2.TabIndex = 11;
-            this.button2.Text = "UPPER MUSTANG TREK";
-            this.button2.TextAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button2.UseVisualStyleBackColor = false;
+            this.hikebutton3.BackColor = System.Drawing.Color.Gainsboro;
+            this.hikebutton3.Font = new System.Drawing.Font("Playfair Display", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.hikebutton3.Location = new System.Drawing.Point(0, 193);
+            this.hikebutton3.Name = "hikebutton3";
+            this.hikebutton3.Size = new System.Drawing.Size(242, 56);
+            this.hikebutton3.TabIndex = 11;
+            this.hikebutton3.Text = "UPPER MUSTANG TREK";
+            this.hikebutton3.TextAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.hikebutton3.UseVisualStyleBackColor = false;
+            this.hikebutton3.Click += new System.EventHandler(this.hikebutton3_Click);
             // 
             // pictureBox3
             // 
@@ -236,37 +261,13 @@ namespace TravelManagement
             // 
             // bestpanel1
             // 
-            this.bestpanel1.Controls.Add(this.label2);
-            this.bestpanel1.Controls.Add(this.Chitwan);
+            this.bestpanel1.Controls.Add(this.hikelabel1);
+            this.bestpanel1.Controls.Add(this.hikebutton1);
             this.bestpanel1.Controls.Add(this.pictureBox1);
             this.bestpanel1.Location = new System.Drawing.Point(12, 72);
             this.bestpanel1.Name = "bestpanel1";
             this.bestpanel1.Size = new System.Drawing.Size(242, 249);
             this.bestpanel1.TabIndex = 9;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Gainsboro;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Maroon;
-            this.label2.Location = new System.Drawing.Point(10, 218);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(92, 20);
-            this.label2.TabIndex = 10;
-            this.label2.Text = "NRS 15000";
-            // 
-            // Chitwan
-            // 
-            this.Chitwan.BackColor = System.Drawing.Color.Gainsboro;
-            this.Chitwan.Font = new System.Drawing.Font("Playfair Display", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Chitwan.Location = new System.Drawing.Point(0, 193);
-            this.Chitwan.Name = "Chitwan";
-            this.Chitwan.Size = new System.Drawing.Size(242, 56);
-            this.Chitwan.TabIndex = 11;
-            this.Chitwan.Text = "ANNAPURNA BASE CAMP";
-            this.Chitwan.TextAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.Chitwan.UseVisualStyleBackColor = false;
             // 
             // pictureBox1
             // 
@@ -279,14 +280,96 @@ namespace TravelManagement
             this.pictureBox1.TabIndex = 10;
             this.pictureBox1.TabStop = false;
             // 
+            // Crossbutton
+            // 
+            this.Crossbutton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.Crossbutton.BackColor = System.Drawing.Color.Transparent;
+            this.Crossbutton.FlatAppearance.BorderSize = 0;
+            this.Crossbutton.Font = new System.Drawing.Font("Franklin Gothic Demi", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Crossbutton.ForeColor = System.Drawing.Color.Firebrick;
+            this.Crossbutton.Location = new System.Drawing.Point(776, 13);
+            this.Crossbutton.Name = "Crossbutton";
+            this.Crossbutton.Size = new System.Drawing.Size(55, 39);
+            this.Crossbutton.TabIndex = 10;
+            this.Crossbutton.Text = "X";
+            this.Crossbutton.UseVisualStyleBackColor = false;
+            this.Crossbutton.Click += new System.EventHandler(this.Crossbutton_Click);
+            // 
+            // hikebutton1
+            // 
+            this.hikebutton1.BackColor = System.Drawing.Color.Gainsboro;
+            this.hikebutton1.Font = new System.Drawing.Font("Playfair Display", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.hikebutton1.Location = new System.Drawing.Point(0, 193);
+            this.hikebutton1.Name = "hikebutton1";
+            this.hikebutton1.Size = new System.Drawing.Size(242, 56);
+            this.hikebutton1.TabIndex = 12;
+            this.hikebutton1.Text = "GOSAIKUNDA TREK";
+            this.hikebutton1.TextAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.hikebutton1.UseVisualStyleBackColor = false;
+            this.hikebutton1.Click += new System.EventHandler(this.hikebutton1_Click);
+            // 
+            // hikelabel1
+            // 
+            this.hikelabel1.AutoSize = true;
+            this.hikelabel1.BackColor = System.Drawing.Color.Gainsboro;
+            this.hikelabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.hikelabel1.ForeColor = System.Drawing.Color.Maroon;
+            this.hikelabel1.Location = new System.Drawing.Point(14, 218);
+            this.hikelabel1.Name = "hikelabel1";
+            this.hikelabel1.Size = new System.Drawing.Size(92, 20);
+            this.hikelabel1.TabIndex = 13;
+            this.hikelabel1.Text = "NRS 15000";
+            // 
+            // detail
+            // 
+            this.detail.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.detail.BackColor = System.Drawing.Color.White;
+            this.detail.Location = new System.Drawing.Point(0, 0);
+            this.detail.Name = "detail";
+            this.detail.Size = new System.Drawing.Size(888, 413);
+            this.detail.TabIndex = 0;
+            // 
+            // right
+            // 
+            this.right.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.right.BackColor = System.Drawing.Color.Transparent;
+            this.right.BackgroundImage = global::TravelManagement.Properties.Resources.right;
+            this.right.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.right.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.right.Image = null;
+            this.right.ImageSize = new System.Drawing.Size(64, 64);
+            this.right.Location = new System.Drawing.Point(760, 148);
+            this.right.Name = "right";
+            this.right.OnHoverImage = null;
+            this.right.OnHoverImageOffset = new System.Drawing.Point(0, 0);
+            this.right.Size = new System.Drawing.Size(51, 49);
+            this.right.TabIndex = 15;
+            this.right.Click += new System.EventHandler(this.right_Click);
+            // 
+            // left
+            // 
+            this.left.BackColor = System.Drawing.Color.Transparent;
+            this.left.BackgroundImage = global::TravelManagement.Properties.Resources.left;
+            this.left.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.left.Image = null;
+            this.left.ImageSize = new System.Drawing.Size(64, 64);
+            this.left.Location = new System.Drawing.Point(3, 148);
+            this.left.Name = "left";
+            this.left.OnHoverImage = null;
+            this.left.OnHoverImageOffset = new System.Drawing.Point(0, 0);
+            this.left.Size = new System.Drawing.Size(51, 49);
+            this.left.TabIndex = 16;
+            // 
             // hiking
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.backcoverpanel);
             this.Name = "hiking";
-            this.Size = new System.Drawing.Size(931, 376);
+            this.Size = new System.Drawing.Size(931, 431);
             this.Load += new System.EventHandler(this.hiking_Load);
+            this.backcoverpanel.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.bestpanel4.ResumeLayout(false);
@@ -307,24 +390,29 @@ namespace TravelManagement
 
         #endregion
 
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Panel backcoverpanel;
+        private Detail detail;
+        private System.Windows.Forms.Button Crossbutton;
+        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel bestpanel4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Label hikelabel4;
+        private System.Windows.Forms.Button hikebutton4;
         private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Panel bestpanel2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label hikelabel2;
+        private System.Windows.Forms.Button hikebutton2;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button Chitwan;
         private System.Windows.Forms.Panel bestpanel3;
+        private System.Windows.Forms.Label hikelabel3;
+        private System.Windows.Forms.Button hikebutton3;
+        private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Label nepaltour;
         private System.Windows.Forms.Label hike;
         private System.Windows.Forms.Panel bestpanel1;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label hikelabel1;
+        private System.Windows.Forms.Button hikebutton1;
+        private Guna.UI.WinForms.GunaImageButton right;
+        private Guna.UI.WinForms.GunaImageButton left;
     }
 }

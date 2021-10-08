@@ -80,6 +80,12 @@
     <Compile Include="aboutususercontrol.Designer.cs">
       <DependentUpon>aboutususercontrol.cs</DependentUpon>
     </Compile>
+    <Compile Include="addimage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="addimage.Designer.cs">
+      <DependentUpon>addimage.cs</DependentUpon>
+    </Compile>
     <Compile Include="Admin.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -104,11 +110,41 @@
     <Compile Include="adminfrontpage.Designer.cs">
       <DependentUpon>adminfrontpage.cs</DependentUpon>
     </Compile>
+    <Compile Include="adminimage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="adminimage.Designer.cs">
+      <DependentUpon>adminimage.cs</DependentUpon>
+    </Compile>
     <Compile Include="adminupdate.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="adminupdate.Designer.cs">
       <DependentUpon>adminupdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="afterloggedadmin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="afterloggedadmin.Designer.cs">
+      <DependentUpon>afterloggedadmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="afterloggeduser.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="afterloggeduser.Designer.cs">
+      <DependentUpon>afterloggeduser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="bookeduser.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="bookeduser.Designer.cs">
+      <DependentUpon>bookeduser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="changepassword.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="changepassword.Designer.cs">
+      <DependentUpon>changepassword.cs</DependentUpon>
     </Compile>
     <Compile Include="Contactus.cs">
       <SubType>UserControl</SubType>
@@ -128,11 +164,29 @@
     <Compile Include="contactusercontrol.Designer.cs">
       <DependentUpon>contactusercontrol.cs</DependentUpon>
     </Compile>
+    <Compile Include="deleteimage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="deleteimage.Designer.cs">
+      <DependentUpon>deleteimage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="deleteuser.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="deleteuser.Designer.cs">
+      <DependentUpon>deleteuser.cs</DependentUpon>
+    </Compile>
     <Compile Include="Detail.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Detail.Designer.cs">
       <DependentUpon>Detail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="emailreceived.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="emailreceived.Designer.cs">
+      <DependentUpon>emailreceived.cs</DependentUpon>
     </Compile>
     <Compile Include="explorenepal.cs">
       <SubType>UserControl</SubType>
@@ -182,7 +236,19 @@
     <Compile Include="login.Designer.cs">
       <DependentUpon>login.cs</DependentUpon>
     </Compile>
+    <Compile Include="logout.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="logout.Designer.cs">
+      <DependentUpon>logout.cs</DependentUpon>
+    </Compile>
     <Compile Include="MyGlobal.cs" />
+    <Compile Include="profileuser.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="profileuser.Designer.cs">
+      <DependentUpon>profileuser.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
@@ -207,6 +273,12 @@
     </Compile>
     <Compile Include="search.Designer.cs">
       <DependentUpon>search.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sendmail.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="sendmail.Designer.cs">
+      <DependentUpon>sendmail.cs</DependentUpon>
     </Compile>
     <Compile Include="special.cs">
       <SubType>UserControl</SubType>
@@ -268,6 +340,12 @@
     <Compile Include="trekkingusercontrol.Designer.cs">
       <DependentUpon>trekkingusercontrol.cs</DependentUpon>
     </Compile>
+    <Compile Include="updateuser.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="updateuser.Designer.cs">
+      <DependentUpon>updateuser.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Aboutus.resx">
       <DependentUpon>Aboutus.cs</DependentUpon>
     </EmbeddedResource>
@@ -276,6 +354,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="aboutususercontrol.resx">
       <DependentUpon>aboutususercontrol.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addimage.resx">
+      <DependentUpon>addimage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Admin.resx">
       <DependentUpon>Admin.cs</DependentUpon>
@@ -289,8 +370,23 @@
     <EmbeddedResource Include="adminfrontpage.resx">
       <DependentUpon>adminfrontpage.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="adminimage.resx">
+      <DependentUpon>adminimage.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="adminupdate.resx">
       <DependentUpon>adminupdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="afterloggedadmin.resx">
+      <DependentUpon>afterloggedadmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="afterloggeduser.resx">
+      <DependentUpon>afterloggeduser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bookeduser.resx">
+      <DependentUpon>bookeduser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="changepassword.resx">
+      <DependentUpon>changepassword.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Contactus.resx">
       <DependentUpon>Contactus.cs</DependentUpon>
@@ -301,8 +397,17 @@
     <EmbeddedResource Include="contactusercontrol.resx">
       <DependentUpon>contactusercontrol.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="deleteimage.resx">
+      <DependentUpon>deleteimage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="deleteuser.resx">
+      <DependentUpon>deleteuser.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Detail.resx">
       <DependentUpon>Detail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="emailreceived.resx">
+      <DependentUpon>emailreceived.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="explorenepal.resx">
       <DependentUpon>explorenepal.cs</DependentUpon>
@@ -328,6 +433,12 @@
     <EmbeddedResource Include="login.resx">
       <DependentUpon>login.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="logout.resx">
+      <DependentUpon>logout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="profileuser.resx">
+      <DependentUpon>profileuser.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
@@ -341,6 +452,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="search.resx">
       <DependentUpon>search.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sendmail.resx">
+      <DependentUpon>sendmail.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="special.resx">
       <DependentUpon>special.cs</DependentUpon>
@@ -371,6 +485,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="trekkingusercontrol.resx">
       <DependentUpon>trekkingusercontrol.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="updateuser.resx">
+      <DependentUpon>updateuser.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -613,6 +730,42 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\file_16px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\profile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\human.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\changepassword.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\key.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sendemail.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\viewdetail.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\inbox.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blackinbox.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\envelop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sacho.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\addadmin.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

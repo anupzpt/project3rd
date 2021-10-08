@@ -34,11 +34,13 @@ namespace TravelManagement
         private void adminupdate_Load(object sender, EventArgs e)
         {
             SqlConnection con = new SqlConnection(MyGlobal.constring);
-            con.Open();
             if(MyGlobal.admininfo==1)
             {
+
                 try
                 {
+                    con.Open();
+
                     string image = "Select *from changepanel";
                     SqlDataAdapter sda = new SqlDataAdapter(image, con);
                     DataTable dt = new DataTable();
@@ -64,6 +66,9 @@ namespace TravelManagement
             {
                 try
                 {
+                    con.Open();
+
+                    MessageBox.Show("audaixa ");
                     string image = "Select *from trekchangepanel";
                     SqlDataAdapter sda = new SqlDataAdapter(image, con);
                     DataTable dt = new DataTable();
@@ -89,6 +94,8 @@ namespace TravelManagement
             {
                 try
                 {
+                    con.Open();
+
                     string image = "Select *from specialchangepanel";
                     SqlDataAdapter sda = new SqlDataAdapter(image, con);
                     DataTable dt = new DataTable();
@@ -123,7 +130,7 @@ namespace TravelManagement
                         selectComboBox.Items.Add(destionation);
                         i++;
                     }
-                }
+                } 
                 catch (Exception ex)
                 {
 
@@ -143,7 +150,7 @@ namespace TravelManagement
                 SqlDataAdapter sda = new SqlDataAdapter(query, con);
                 DataTable dt = new DataTable();
                 sda.Fill(dt); 
-            descriptiontextbox.Text = dt.Rows[0]["Descripition"].ToString();
+             descriptiontextbox.Text = dt.Rows[0]["Descripition"].ToString();
                 Durationtextbox.Text = dt.Rows[0]["Duration"].ToString();
                 transporttextbox.Text = dt.Rows[0]["Transport"].ToString();
 

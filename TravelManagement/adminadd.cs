@@ -112,5 +112,12 @@ namespace TravelManagement
                 imagepicturebox.Image = Image.FromFile(imagelocation);
             }
         }
+
+        private void adminadd_Load(object sender, EventArgs e)
+        {
+            
+           // Addpanel.Location = new Point(62,40);
+           
+        }
     }
 }

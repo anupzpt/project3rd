@@ -17,6 +17,13 @@ namespace TravelManagement
         {
             InitializeComponent();
         }
+        string location;
+        string duration1;
+        string transport1;
+        string accomodation1;
+        string tripprice1;
+
+
 
         private void detailpanel_Paint(object sender, PaintEventArgs e)
         {
@@ -43,21 +50,24 @@ namespace TravelManagement
 
         private void Bookbutton_Click(object sender, EventArgs e)
         {
-            string name;
-            string number;
-            string emailaddress;
-            string datepicker;
-            string quantity;
-            name = nametextbox.Text;
-            number = Phone.Text;
-            emailaddress = Email.Text;
-            datepicker = date.Text;
-            quantity = Quantity.Text;
-            MessageBox.Show(name);
-            MessageBox.Show(number);
-            MessageBox.Show(emailaddress);
-            MessageBox.Show(datepicker);
-            MessageBox.Show(quantity);
+            SqlConnection con = new SqlConnection(MyGlobal.constring);
+            //try
+           // {
+               
+                con.Open();
+                string query = "insert into booking (name,number,email,date,quantity,location,duration,transport,accomodation,tripprice) Values ('" + nametextbox.Text + "','" + Phone.Text + "','" + Email.Text + "','" + date.Text + "','" + Quantity.Text + "','"+location+ "','"+duration1+ "','"+transport1+ "','"+accomodation1+ "','"+tripprice1+"')";
+                SqlDataAdapter sda = new SqlDataAdapter(query, con);
+                sda.SelectCommand.ExecuteNonQuery();
+                MessageBox.Show("SAVE");
+           //// }
+           //// catch
+           //// {
+           ////     MessageBox.Show("Save Failed");
+           // }
+           // finally
+           // {
+           //     con.Close();
+           // }
 
         }
 
@@ -156,15 +166,16 @@ namespace TravelManagement
                 DataTable dt = new DataTable();
                 sda.Fill(dt);
                 string description = dt.Rows[0]["description"].ToString();
-                string duration = dt.Rows[0]["duration"].ToString();
-                string tripprice = dt.Rows[0]["trekpricelabel"].ToString();
-                string accomodation = dt.Rows[0]["accomodation"].ToString();
-                string transport = dt.Rows[0]["transport"].ToString();
+                 duration1 = dt.Rows[0]["duration"].ToString();
+               tripprice1 = dt.Rows[0]["trekpricelabel"].ToString();
+                accomodation1 = dt.Rows[0]["accomodation"].ToString();
+                transport1 = dt.Rows[0]["transport"].ToString();
+                location = dt.Rows[0]["treklocation"].ToString();
                 detailtext.Text = description;
-                durationlabel.Text = duration;
-                trippricelabel.Text = tripprice;
-                accomodationlabel.Text = accomodation;
-                transportlabel.Text = transport;
+                durationlabel.Text = duration1;
+                trippricelabel.Text = tripprice1;
+                accomodationlabel.Text = accomodation1;
+                transportlabel.Text = transport1;
             }
             catch(Exception ex)
             {

@@ -27,7 +27,8 @@ namespace TravelManagement
             specialimage.Location = new Point(700,230);
             homeimage.Location = new Point(1000, 230);
             admin.Visible = false;
-            Crossbutton.Visible = false;
+            adminimage.Visible = false;
+            crosstimer.Start();
 
         }
 
@@ -35,8 +36,6 @@ namespace TravelManagement
         {
             MyGlobal.admininfo=1;
             admin.Visible = true;
-            Crossbutton.Visible = true;
-            Crossbutton.BringToFront();
             adminforntpagepanel.Visible = false;
             admin.BringToFront();
         }
@@ -45,19 +44,14 @@ namespace TravelManagement
         {
             MyGlobal.admininfo = 2;
             admin.Visible = true;
-            Crossbutton.Visible = true;
-            Crossbutton.BringToFront();
             adminforntpagepanel.Visible = false;
             admin.BringToFront();
-
         }
 
         private void specialpicturebox_MouseDown(object sender, MouseEventArgs e)
         {
             MyGlobal.admininfo = 3;
             admin.Visible = true;
-            Crossbutton.Visible = true;
-            Crossbutton.BringToFront();
             adminforntpagepanel.Visible = false;
             admin.BringToFront();
 
@@ -66,57 +60,65 @@ namespace TravelManagement
         private void homepicturebox_MouseDown(object sender, MouseEventArgs e)
         {
             MyGlobal.admininfo = 4;
-            admin.Visible = true;
-            Crossbutton.Visible = true;
-            Crossbutton.BringToFront();
+            admin.Visible = false;
+            adminimage.Visible = true;
+            adminimage.BringToFront();
             adminforntpagepanel.Visible = false;
-            admin.BringToFront();
-
         }
 
         private void tourimagepicturebox_MouseDown(object sender, MouseEventArgs e)
         {
             MyGlobal.admininfo = 5;
-            admin.Visible = true;
-            Crossbutton.Visible = true;
-            Crossbutton.BringToFront();
+            admin.Visible = false;
+            adminimage.Visible = true;
+            adminimage.BringToFront();
             adminforntpagepanel.Visible = false;
-            admin.BringToFront();
         }
 
         private void trekimagepicturebox_MouseDown(object sender, MouseEventArgs e)
         {
             MyGlobal.admininfo = 6;
-            admin.Visible = true;
-            Crossbutton.Visible = true;
-            Crossbutton.BringToFront();
+            admin.Visible = false;
+            adminimage.Visible = true;
+            adminimage.BringToFront();
             adminforntpagepanel.Visible = false;
-            admin.BringToFront();
         }
 
         private void specialimagepicturebox_MouseDown(object sender, MouseEventArgs e)
         {
             MyGlobal.admininfo = 7;
-            admin.Visible = true;
-            Crossbutton.Visible = true;
-            Crossbutton.BringToFront();
+            admin.Visible = false;
+            adminimage.Visible = true;
+            adminimage.BringToFront();
             adminforntpagepanel.Visible = false;
-            admin.BringToFront();
         }
 
         private void homeimagepicturebox_MouseDown(object sender, MouseEventArgs e)
         {
             MyGlobal.admininfo = 8;
-            admin.Visible = true;
-            Crossbutton.Visible = true;
-            Crossbutton.BringToFront();
+            admin.Visible = false;
+            adminimage.Visible = true;
+            adminimage.BringToFront();
             adminforntpagepanel.Visible = false;
-            admin.BringToFront();
         }
 
-        private void Crossbutton_Click(object sender, EventArgs e)
+      
+
+       
+
+        private void admin_Load(object sender, EventArgs e)
         {
-            adminforntpagepanel.Visible = true;
+          
+        }
+
+        private void crosstimer_Tick(object sender, EventArgs e)
+        {
+            if(MyGlobal.crosstimer==1)
+            {
+                admin.Visible = false;
+                adminimage.Visible = false;
+                adminforntpagepanel.Visible = true;
+            }
         }
     }
 }

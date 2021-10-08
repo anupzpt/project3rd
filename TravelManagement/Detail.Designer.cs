@@ -172,7 +172,7 @@ namespace TravelManagement
             this.Bookbutton.OnPressedColor = System.Drawing.Color.MistyRose;
             this.Bookbutton.Radius = 8;
             this.Bookbutton.Size = new System.Drawing.Size(93, 43);
-            this.Bookbutton.TabIndex = 12;
+            this.Bookbutton.TabIndex = 5;
             this.Bookbutton.Text = "BOOK";
             this.Bookbutton.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.Bookbutton.Click += new System.EventHandler(this.Bookbutton_Click);
@@ -187,7 +187,7 @@ namespace TravelManagement
             this.Quantity.Multiline = true;
             this.Quantity.Name = "Quantity";
             this.Quantity.Size = new System.Drawing.Size(238, 34);
-            this.Quantity.TabIndex = 7;
+            this.Quantity.TabIndex = 4;
             this.Quantity.Text = "Quantity";
             this.Quantity.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Quantity_KeyPress);
             this.Quantity.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Quantity_MouseDown);
@@ -202,7 +202,7 @@ namespace TravelManagement
             this.Phone.Multiline = true;
             this.Phone.Name = "Phone";
             this.Phone.Size = new System.Drawing.Size(238, 34);
-            this.Phone.TabIndex = 6;
+            this.Phone.TabIndex = 1;
             this.Phone.Text = "Phone Number";
             this.Phone.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Phone_KeyPress);
             this.Phone.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Phone_MouseDown);
@@ -217,7 +217,7 @@ namespace TravelManagement
             this.Email.Multiline = true;
             this.Email.Name = "Email";
             this.Email.Size = new System.Drawing.Size(238, 34);
-            this.Email.TabIndex = 5;
+            this.Email.TabIndex = 2;
             this.Email.Text = "Email";
             this.Email.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Email_MouseDown);
             // 
@@ -241,7 +241,7 @@ namespace TravelManagement
             this.date.OnHoverForeColor = System.Drawing.Color.LightSteelBlue;
             this.date.OnPressedColor = System.Drawing.Color.Black;
             this.date.Size = new System.Drawing.Size(237, 34);
-            this.date.TabIndex = 4;
+            this.date.TabIndex = 3;
             this.date.Text = "Thursday, September 23, 2021";
             this.date.Value = new System.DateTime(2021, 9, 23, 20, 18, 57, 832);
             // 

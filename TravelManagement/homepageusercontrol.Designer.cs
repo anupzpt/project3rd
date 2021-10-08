@@ -30,7 +30,6 @@ namespace TravelManagement
         private void InitializeComponent()
         {
             this.homepage = new TravelManagement.homepage();
-            this.rara = new TravelManagement.rara();
             this.hiking = new TravelManagement.hiking();
             this.explorenepal = new TravelManagement.explorenepal();
             this.search = new TravelManagement.search();
@@ -45,15 +44,6 @@ namespace TravelManagement
             this.homepage.Name = "homepage";
             this.homepage.Size = new System.Drawing.Size(857, 400);
             this.homepage.TabIndex = 0;
-            // 
-            // rara
-            // 
-            this.rara.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.rara.Location = new System.Drawing.Point(0, 0);
-            this.rara.Name = "rara";
-            this.rara.Size = new System.Drawing.Size(857, 222);
-            this.rara.TabIndex = 4;
             // 
             // hiking
             // 
@@ -89,7 +79,7 @@ namespace TravelManagement
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lastpanel.Location = new System.Drawing.Point(0, 0);
             this.lastpanel.Name = "lastpanel";
-            this.lastpanel.Size = new System.Drawing.Size(840, 203);
+            this.lastpanel.Size = new System.Drawing.Size(840, 200);
             this.lastpanel.TabIndex = 5;
             // 
             // Homepageusercontrol
@@ -97,12 +87,11 @@ namespace TravelManagement
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
+            this.Controls.Add(this.lastpanel);
             this.Controls.Add(this.homepage);
-            this.Controls.Add(this.rara);
             this.Controls.Add(this.hiking);
             this.Controls.Add(this.explorenepal);
             this.Controls.Add(this.search);
-            this.Controls.Add(this.lastpanel);
             this.Name = "Homepageusercontrol";
             this.Size = new System.Drawing.Size(840, 400);
             this.Load += new System.EventHandler(this.homepageusercontrol_Load);
@@ -116,7 +105,6 @@ namespace TravelManagement
         private search search;
         private explorenepal explorenepal;
         private hiking hiking;
-        private rara rara;
         private lastpanel lastpanel;
     }
 }

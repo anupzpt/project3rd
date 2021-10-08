@@ -30,12 +30,12 @@ namespace TravelManagement
         private void InitializeComponent()
         {
             this.adminmainpanel = new System.Windows.Forms.Panel();
-            this.adminadd = new TravelManagement.adminadd();
             this.panelforbutton = new System.Windows.Forms.Panel();
             this.Deletebutton = new Guna.UI.WinForms.GunaGradientButton();
-            this.Userdetailbutton = new Guna.UI.WinForms.GunaGradientButton();
             this.Updatebutton = new Guna.UI.WinForms.GunaGradientButton();
             this.Add = new Guna.UI.WinForms.GunaGradientButton();
+            this.Crossbutton = new System.Windows.Forms.Button();
+            this.adminadd = new TravelManagement.adminadd();
             this.adminupdate = new TravelManagement.adminupdate();
             this.admindelete = new TravelManagement.admindelete();
             this.adminmainpanel.SuspendLayout();
@@ -49,6 +49,7 @@ namespace TravelManagement
             | System.Windows.Forms.AnchorStyles.Right)));
             this.adminmainpanel.BackgroundImage = global::TravelManagement.Properties.Resources.admin;
             this.adminmainpanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.adminmainpanel.Controls.Add(this.Crossbutton);
             this.adminmainpanel.Controls.Add(this.adminadd);
             this.adminmainpanel.Controls.Add(this.panelforbutton);
             this.adminmainpanel.Controls.Add(this.adminupdate);
@@ -58,25 +59,17 @@ namespace TravelManagement
             this.adminmainpanel.Size = new System.Drawing.Size(857, 450);
             this.adminmainpanel.TabIndex = 0;
             // 
-            // adminadd
-            // 
-            this.adminadd.Location = new System.Drawing.Point(7, 50);
-            this.adminadd.Name = "adminadd";
-            this.adminadd.Size = new System.Drawing.Size(841, 392);
-            this.adminadd.TabIndex = 2;
-            // 
             // panelforbutton
             // 
             this.panelforbutton.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panelforbutton.BackColor = System.Drawing.Color.Transparent;
             this.panelforbutton.Controls.Add(this.Deletebutton);
-            this.panelforbutton.Controls.Add(this.Userdetailbutton);
             this.panelforbutton.Controls.Add(this.Updatebutton);
             this.panelforbutton.Controls.Add(this.Add);
-            this.panelforbutton.Location = new System.Drawing.Point(-3, -2);
+            this.panelforbutton.Location = new System.Drawing.Point(0, 0);
             this.panelforbutton.Name = "panelforbutton";
-            this.panelforbutton.Size = new System.Drawing.Size(851, 54);
+            this.panelforbutton.Size = new System.Drawing.Size(784, 46);
             this.panelforbutton.TabIndex = 1;
             // 
             // Deletebutton
@@ -94,7 +87,7 @@ namespace TravelManagement
             this.Deletebutton.ForeColor = System.Drawing.Color.White;
             this.Deletebutton.Image = null;
             this.Deletebutton.ImageSize = new System.Drawing.Size(20, 20);
-            this.Deletebutton.Location = new System.Drawing.Point(278, 5);
+            this.Deletebutton.Location = new System.Drawing.Point(347, 3);
             this.Deletebutton.Name = "Deletebutton";
             this.Deletebutton.OnHoverBaseColor1 = System.Drawing.Color.LightGray;
             this.Deletebutton.OnHoverBaseColor2 = System.Drawing.Color.DarkGray;
@@ -108,35 +101,6 @@ namespace TravelManagement
             this.Deletebutton.Text = "DELETE";
             this.Deletebutton.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.Deletebutton.Click += new System.EventHandler(this.Deletebutton_Click);
-            // 
-            // Userdetailbutton
-            // 
-            this.Userdetailbutton.AnimationHoverSpeed = 0.07F;
-            this.Userdetailbutton.AnimationSpeed = 0.03F;
-            this.Userdetailbutton.BackColor = System.Drawing.Color.Transparent;
-            this.Userdetailbutton.BaseColor1 = System.Drawing.SystemColors.AppWorkspace;
-            this.Userdetailbutton.BaseColor2 = System.Drawing.Color.LightSlateGray;
-            this.Userdetailbutton.BorderColor = System.Drawing.Color.Navy;
-            this.Userdetailbutton.BorderSize = 1;
-            this.Userdetailbutton.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.Userdetailbutton.FocusedColor = System.Drawing.Color.Empty;
-            this.Userdetailbutton.Font = new System.Drawing.Font("Franklin Gothic Demi", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Userdetailbutton.ForeColor = System.Drawing.Color.White;
-            this.Userdetailbutton.Image = null;
-            this.Userdetailbutton.ImageSize = new System.Drawing.Size(20, 20);
-            this.Userdetailbutton.Location = new System.Drawing.Point(415, 5);
-            this.Userdetailbutton.Name = "Userdetailbutton";
-            this.Userdetailbutton.OnHoverBaseColor1 = System.Drawing.Color.LightGray;
-            this.Userdetailbutton.OnHoverBaseColor2 = System.Drawing.Color.DarkGray;
-            this.Userdetailbutton.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.Userdetailbutton.OnHoverForeColor = System.Drawing.Color.Gainsboro;
-            this.Userdetailbutton.OnHoverImage = null;
-            this.Userdetailbutton.OnPressedColor = System.Drawing.SystemColors.ActiveCaption;
-            this.Userdetailbutton.Radius = 3;
-            this.Userdetailbutton.Size = new System.Drawing.Size(136, 42);
-            this.Userdetailbutton.TabIndex = 10;
-            this.Userdetailbutton.Text = "USER DETAIL";
-            this.Userdetailbutton.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // Updatebutton
             // 
@@ -153,7 +117,7 @@ namespace TravelManagement
             this.Updatebutton.ForeColor = System.Drawing.Color.White;
             this.Updatebutton.Image = null;
             this.Updatebutton.ImageSize = new System.Drawing.Size(20, 20);
-            this.Updatebutton.Location = new System.Drawing.Point(146, 5);
+            this.Updatebutton.Location = new System.Drawing.Point(178, 4);
             this.Updatebutton.Name = "Updatebutton";
             this.Updatebutton.OnHoverBaseColor1 = System.Drawing.Color.LightGray;
             this.Updatebutton.OnHoverBaseColor2 = System.Drawing.Color.DarkGray;
@@ -198,6 +162,28 @@ namespace TravelManagement
             this.Add.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.Add.Click += new System.EventHandler(this.Add_Click);
             // 
+            // Crossbutton
+            // 
+            this.Crossbutton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.Crossbutton.BackColor = System.Drawing.Color.Transparent;
+            this.Crossbutton.FlatAppearance.BorderSize = 0;
+            this.Crossbutton.Font = new System.Drawing.Font("Franklin Gothic Demi", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Crossbutton.ForeColor = System.Drawing.Color.Firebrick;
+            this.Crossbutton.Location = new System.Drawing.Point(790, 5);
+            this.Crossbutton.Name = "Crossbutton";
+            this.Crossbutton.Size = new System.Drawing.Size(55, 39);
+            this.Crossbutton.TabIndex = 10;
+            this.Crossbutton.Text = "X";
+            this.Crossbutton.UseVisualStyleBackColor = false;
+            this.Crossbutton.Click += new System.EventHandler(this.Crossbutton_Click);
+            // 
+            // adminadd
+            // 
+            this.adminadd.Location = new System.Drawing.Point(7, 50);
+            this.adminadd.Name = "adminadd";
+            this.adminadd.Size = new System.Drawing.Size(841, 392);
+            this.adminadd.TabIndex = 2;
+            // 
             // adminupdate
             // 
             this.adminupdate.Location = new System.Drawing.Point(7, 50);
@@ -219,6 +205,7 @@ namespace TravelManagement
             this.Controls.Add(this.adminmainpanel);
             this.Name = "Admin";
             this.Size = new System.Drawing.Size(857, 450);
+            this.Load += new System.EventHandler(this.Admin_Load);
             this.adminmainpanel.ResumeLayout(false);
             this.panelforbutton.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -229,12 +216,12 @@ namespace TravelManagement
 
         private System.Windows.Forms.Panel adminmainpanel;
         private System.Windows.Forms.Panel panelforbutton;
-        private Guna.UI.WinForms.GunaGradientButton Userdetailbutton;
         private Guna.UI.WinForms.GunaGradientButton Updatebutton;
         private Guna.UI.WinForms.GunaGradientButton Add;
         private Guna.UI.WinForms.GunaGradientButton Deletebutton;
         private adminadd adminadd;
         private adminupdate adminupdate;
         private admindelete admindelete;
+        private System.Windows.Forms.Button Crossbutton;
     }
 }

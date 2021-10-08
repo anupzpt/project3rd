@@ -26,10 +26,11 @@ namespace TravelManagement
             explorenepal.Size = new Size(900, 1100);
             hiking.Location = new Point(0, 1150);
             hiking.Size = new Size(900, 400);
-            rara.Location = new Point(0, 1510);
-            rara.Size = new Size(840, 261);
-            lastpanel.Location = new Point(0, 1780);
-            lastpanel.Size = new Size(840, 300);
+          //  rara.Location = new Point(0, 1510);
+           // rara.Size = new Size(840, 261);
+            lastpanel.Location = new Point(0, 1580);
+            lastpanel.Size = new Size(840, 280);
+           
         }
     }
 }

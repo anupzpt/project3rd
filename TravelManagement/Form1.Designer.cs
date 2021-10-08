@@ -47,7 +47,7 @@ namespace TravelManagement
             this.loginbutton2 = new Guna.UI2.WinForms.Guna2CircleButton();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.adminfrontpage = new TravelManagement.adminfrontpage();
+            this.afterloggedadmin = new TravelManagement.afterloggedadmin();
             this.homepageusercontrol = new TravelManagement.Homepageusercontrol();
             this.trekkingusercontrol = new TravelManagement.trekkingusercontrol();
             this.specialusercontrol = new TravelManagement.Specialusercontrol();
@@ -344,7 +344,7 @@ namespace TravelManagement
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Controls.Add(this.adminfrontpage);
+            this.panel1.Controls.Add(this.afterloggedadmin);
             this.panel1.Controls.Add(this.homepageusercontrol);
             this.panel1.Controls.Add(this.trekkingusercontrol);
             this.panel1.Controls.Add(this.specialusercontrol);
@@ -357,15 +357,14 @@ namespace TravelManagement
             this.panel1.Size = new System.Drawing.Size(840, 307);
             this.panel1.TabIndex = 2;
             // 
-            // adminfrontpage
+            // afterloggedadmin
             // 
-            this.adminfrontpage.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.adminfrontpage.Location = new System.Drawing.Point(0, 0);
-            this.adminfrontpage.Name = "adminfrontpage";
-            this.adminfrontpage.Size = new System.Drawing.Size(900, 471);
-            this.adminfrontpage.TabIndex = 20;
+            this.afterloggedadmin.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.afterloggedadmin.Location = new System.Drawing.Point(530, 0);
+            this.afterloggedadmin.Name = "afterloggedadmin";
+            this.afterloggedadmin.Size = new System.Drawing.Size(291, 333);
+            this.afterloggedadmin.TabIndex = 20;
+            this.afterloggedadmin.Visible = false;
             // 
             // homepageusercontrol
             // 
@@ -489,7 +488,7 @@ namespace TravelManagement
         private Specialusercontrol specialusercontrol;
         private contactusercontrol contactusercontrol;
         private aboutususercontrol aboutususercontrol;
-        private adminfrontpage adminfrontpage;
+        private afterloggedadmin afterloggedadmin;
     }
 }
 

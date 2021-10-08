@@ -17,10 +17,15 @@ namespace TravelManagement
         {
             InitializeComponent();
         }
-
+        private void loggedin_Load(object sender, EventArgs e)
+        {
+            Refreshtimer.Start();
+        }
         private void gunaLinkLabel1_MouseDown(object sender, MouseEventArgs e)
         {
-            MessageBox.Show("Good Job");
+            register.Visible = true;
+            register.BringToFront();
+            MyGlobal.logintimer = 2;
         }
 
         private void loginbutton_Click(object sender, EventArgs e)
@@ -34,23 +39,30 @@ namespace TravelManagement
                 SqlDataAdapter sta = new SqlDataAdapter(query, con);
                 DataTable dt = new DataTable();
                 sta.Fill(dt);
-                string admin = dt.Rows[0]["Admin"].ToString();
-                string user = dt.Rows[0]["Users"].ToString();
+                //string admin = dt.Rows[0]["Admin"].ToString();
+                //string user = dt.Rows[0]["Users"].ToString();
+                MyGlobal.username = dt.Rows[0]["Username"].ToString();
+                string verify = dt.Rows[0]["verify"].ToString();
+                MyGlobal.loginsucess = 1;
 
-                int check = Convert.ToInt32(admin);
-                if (check == 1)
+                if (string.Equals(verify,"admin"))
                 {
-                    MessageBox.Show("Welcome Admin");
+                    MyGlobal.admin = 1;
+                    MyGlobal.user = 0;
+
+
                 }
                 else
                 {
                     //   MessageBox.Show("Invalid Logged In !!");
 
                 }
-                int check2 = Convert.ToInt32(user);
-                if (check2 == 1)
+                
+                if (string.Equals(verify, "user"))
                 {
-                    MessageBox.Show("Welcome User");
+                    MyGlobal.user = 1;
+                    MyGlobal.admin = 0;
+
                 }
                 else
                 {
@@ -62,6 +74,25 @@ namespace TravelManagement
             {
                 con.Close();
             }
+
+        }
+
+        private void gunaShadowPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void Refreshtimer_Tick(object sender, EventArgs e)
+        {
+            if(MyGlobal.logintimer==1)
+            {
+                register.Visible = false;
+                register.SendToBack();
+            }
+        }
+
+        private void donthaveaccount_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
 
         }
     }

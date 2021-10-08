@@ -36,11 +36,16 @@ namespace TravelManagement
             trekkingusercontrol.Visible = false;
             specialusercontrol.Visible = false;
             contactusercontrol.Visible = false;
-            this.MinimumSize = new Size(1330,768);
+            this.MinimumSize = new Size(1330, 768);
+            //RefreshTimer.Start();
         }
-        
+
         private void guna2CircleButton1_Click(object sender, EventArgs e)
         {
+            if(MyGlobal.admin==1)
+            {
+
+            }
             login.Visible = true;
             login.BringToFront();
             loginbutton2.BringToFront();
@@ -101,12 +106,17 @@ namespace TravelManagement
         private void Contact_Click(object sender, EventArgs e)
         {
             contactusercontrol.Visible = true;
-            contactusercontrol.BringToFront(); 
+            contactusercontrol.BringToFront();
             homepageusercontrol.Visible = false;
             tourusercontrolform.Visible = false;
             trekkingusercontrol.Visible = false;
             specialusercontrol.Visible = false;
 
+        }
+
+        private void RefreshTimer_Tick(object sender, EventArgs e)
+        {
+            
         }
     }
 }

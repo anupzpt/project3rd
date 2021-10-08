@@ -30,7 +30,6 @@ namespace TravelManagement
         private void InitializeComponent()
         {
             this.backcoverpanel = new System.Windows.Forms.Panel();
-            this.detail = new TravelManagement.Detail();
             this.Crossbutton = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.specialtourlabel = new System.Windows.Forms.Label();
@@ -54,6 +53,7 @@ namespace TravelManagement
             this.shadowpanel = new Guna.UI2.WinForms.Guna2ShadowPanel();
             this.right = new Guna.UI.WinForms.GunaImageButton();
             this.left = new Guna.UI.WinForms.GunaImageButton();
+            this.detail = new TravelManagement.Detail();
             this.backcoverpanel.SuspendLayout();
             this.panel1.SuspendLayout();
             this.bestpanel1.SuspendLayout();
@@ -80,14 +80,6 @@ namespace TravelManagement
             this.backcoverpanel.Size = new System.Drawing.Size(931, 420);
             this.backcoverpanel.TabIndex = 4;
             // 
-            // detail
-            // 
-            this.detail.BackColor = System.Drawing.Color.White;
-            this.detail.Location = new System.Drawing.Point(0, 0);
-            this.detail.Name = "detail";
-            this.detail.Size = new System.Drawing.Size(931, 417);
-            this.detail.TabIndex = 0;
-            // 
             // Crossbutton
             // 
             this.Crossbutton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -95,12 +87,13 @@ namespace TravelManagement
             this.Crossbutton.FlatAppearance.BorderSize = 0;
             this.Crossbutton.Font = new System.Drawing.Font("Franklin Gothic Demi", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Crossbutton.ForeColor = System.Drawing.Color.Firebrick;
-            this.Crossbutton.Location = new System.Drawing.Point(830, 14);
+            this.Crossbutton.Location = new System.Drawing.Point(779, 10);
             this.Crossbutton.Name = "Crossbutton";
             this.Crossbutton.Size = new System.Drawing.Size(55, 39);
             this.Crossbutton.TabIndex = 10;
             this.Crossbutton.Text = "X";
             this.Crossbutton.UseVisualStyleBackColor = false;
+            this.Crossbutton.Click += new System.EventHandler(this.Crossbutton_Click);
             // 
             // panel1
             // 
@@ -337,7 +330,7 @@ namespace TravelManagement
             this.shadowpanel.Name = "shadowpanel";
             this.shadowpanel.ShadowColor = System.Drawing.Color.DarkGreen;
             this.shadowpanel.ShadowDepth = 200;
-            this.shadowpanel.Size = new System.Drawing.Size(878, 369);
+            this.shadowpanel.Size = new System.Drawing.Size(814, 389);
             this.shadowpanel.TabIndex = 14;
             // 
             // right
@@ -349,7 +342,7 @@ namespace TravelManagement
             this.right.DialogResult = System.Windows.Forms.DialogResult.None;
             this.right.Image = null;
             this.right.ImageSize = new System.Drawing.Size(64, 64);
-            this.right.Location = new System.Drawing.Point(805, 148);
+            this.right.Location = new System.Drawing.Point(741, 148);
             this.right.Name = "right";
             this.right.OnHoverImage = null;
             this.right.OnHoverImageOffset = new System.Drawing.Point(0, 0);
@@ -368,6 +361,16 @@ namespace TravelManagement
             this.left.OnHoverImageOffset = new System.Drawing.Point(0, 0);
             this.left.Size = new System.Drawing.Size(51, 49);
             this.left.TabIndex = 1;
+            // 
+            // detail
+            // 
+            this.detail.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.detail.BackColor = System.Drawing.Color.White;
+            this.detail.Location = new System.Drawing.Point(0, 0);
+            this.detail.Name = "detail";
+            this.detail.Size = new System.Drawing.Size(882, 417);
+            this.detail.TabIndex = 0;
             // 
             // specialdetail
             // 

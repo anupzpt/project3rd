@@ -106,5 +106,11 @@ namespace TravelManagement
             Crossbutton.Visible = false;
 
         }
+
+        private void Crossbutton_Click(object sender, EventArgs e)
+        {
+            detail.Visible = false;
+
+        }
     }
 }

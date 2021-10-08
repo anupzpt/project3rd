@@ -93,14 +93,14 @@ namespace TravelManagement
             this.panel1.Controls.Add(this.label6);
             this.panel1.Location = new System.Drawing.Point(39, 45);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(790, 339);
+            this.panel1.Size = new System.Drawing.Size(796, 339);
             this.panel1.TabIndex = 8;
             // 
             // days
             // 
             this.days.AutoSize = true;
             this.days.Font = new System.Drawing.Font("Playfair Display", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.days.Location = new System.Drawing.Point(399, 133);
+            this.days.Location = new System.Drawing.Point(422, 133);
             this.days.Name = "days";
             this.days.Size = new System.Drawing.Size(62, 26);
             this.days.TabIndex = 24;
@@ -118,7 +118,7 @@ namespace TravelManagement
             this.filebutton.ForeColor = System.Drawing.Color.White;
             this.filebutton.Image = global::TravelManagement.Properties.Resources.file_16px;
             this.filebutton.ImageSize = new System.Drawing.Size(20, 20);
-            this.filebutton.Location = new System.Drawing.Point(421, 257);
+            this.filebutton.Location = new System.Drawing.Point(447, 257);
             this.filebutton.Name = "filebutton";
             this.filebutton.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.filebutton.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -126,19 +126,18 @@ namespace TravelManagement
             this.filebutton.OnHoverImage = null;
             this.filebutton.OnPressedColor = System.Drawing.Color.Black;
             this.filebutton.Size = new System.Drawing.Size(40, 30);
-            this.filebutton.TabIndex = 23;
+            this.filebutton.TabIndex = 7;
             this.filebutton.Text = "gunaButton1";
             this.filebutton.Click += new System.EventHandler(this.filebutton_Click);
             // 
             // imagepicturebox
             // 
-            this.imagepicturebox.BackColor = System.Drawing.Color.White;
+            this.imagepicturebox.BackColor = System.Drawing.Color.Transparent;
             this.imagepicturebox.BaseColor = System.Drawing.Color.Transparent;
             this.imagepicturebox.ErrorImage = null;
-            this.imagepicturebox.Image = global::TravelManagement.Properties.Resources.ahokpillar;
-            this.imagepicturebox.Location = new System.Drawing.Point(576, 10);
+            this.imagepicturebox.Location = new System.Drawing.Point(561, 10);
             this.imagepicturebox.Name = "imagepicturebox";
-            this.imagepicturebox.Size = new System.Drawing.Size(188, 177);
+            this.imagepicturebox.Size = new System.Drawing.Size(232, 188);
             this.imagepicturebox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.imagepicturebox.TabIndex = 22;
             this.imagepicturebox.TabStop = false;
@@ -154,8 +153,8 @@ namespace TravelManagement
             this.transporttextbox.Name = "transporttextbox";
             this.transporttextbox.PasswordChar = '\0';
             this.transporttextbox.SelectedText = "";
-            this.transporttextbox.Size = new System.Drawing.Size(280, 32);
-            this.transporttextbox.TabIndex = 21;
+            this.transporttextbox.Size = new System.Drawing.Size(308, 32);
+            this.transporttextbox.TabIndex = 4;
             // 
             // destinationtextbox
             // 
@@ -168,8 +167,8 @@ namespace TravelManagement
             this.destinationtextbox.Name = "destinationtextbox";
             this.destinationtextbox.PasswordChar = '\0';
             this.destinationtextbox.SelectedText = "";
-            this.destinationtextbox.Size = new System.Drawing.Size(280, 32);
-            this.destinationtextbox.TabIndex = 20;
+            this.destinationtextbox.Size = new System.Drawing.Size(308, 32);
+            this.destinationtextbox.TabIndex = 0;
             // 
             // trippricetextbox
             // 
@@ -182,8 +181,8 @@ namespace TravelManagement
             this.trippricetextbox.Name = "trippricetextbox";
             this.trippricetextbox.PasswordChar = '\0';
             this.trippricetextbox.SelectedText = "";
-            this.trippricetextbox.Size = new System.Drawing.Size(280, 32);
-            this.trippricetextbox.TabIndex = 19;
+            this.trippricetextbox.Size = new System.Drawing.Size(308, 32);
+            this.trippricetextbox.TabIndex = 1;
             // 
             // descriptiontextbox
             // 
@@ -196,8 +195,8 @@ namespace TravelManagement
             this.descriptiontextbox.Name = "descriptiontextbox";
             this.descriptiontextbox.PasswordChar = '\0';
             this.descriptiontextbox.SelectedText = "";
-            this.descriptiontextbox.Size = new System.Drawing.Size(280, 32);
-            this.descriptiontextbox.TabIndex = 18;
+            this.descriptiontextbox.Size = new System.Drawing.Size(308, 32);
+            this.descriptiontextbox.TabIndex = 2;
             // 
             // Durationtextbox
             // 
@@ -210,8 +209,8 @@ namespace TravelManagement
             this.Durationtextbox.Name = "Durationtextbox";
             this.Durationtextbox.PasswordChar = '\0';
             this.Durationtextbox.SelectedText = "";
-            this.Durationtextbox.Size = new System.Drawing.Size(206, 32);
-            this.Durationtextbox.TabIndex = 17;
+            this.Durationtextbox.Size = new System.Drawing.Size(235, 32);
+            this.Durationtextbox.TabIndex = 3;
             // 
             // accomodationtextbox
             // 
@@ -224,8 +223,8 @@ namespace TravelManagement
             this.accomodationtextbox.Name = "accomodationtextbox";
             this.accomodationtextbox.PasswordChar = '\0';
             this.accomodationtextbox.SelectedText = "";
-            this.accomodationtextbox.Size = new System.Drawing.Size(280, 32);
-            this.accomodationtextbox.TabIndex = 16;
+            this.accomodationtextbox.Size = new System.Drawing.Size(308, 32);
+            this.accomodationtextbox.TabIndex = 5;
             // 
             // imagetextbox
             // 
@@ -238,8 +237,8 @@ namespace TravelManagement
             this.imagetextbox.Name = "imagetextbox";
             this.imagetextbox.PasswordChar = '\0';
             this.imagetextbox.SelectedText = "";
-            this.imagetextbox.Size = new System.Drawing.Size(235, 32);
-            this.imagetextbox.TabIndex = 15;
+            this.imagetextbox.Size = new System.Drawing.Size(262, 32);
+            this.imagetextbox.TabIndex = 6;
             // 
             // savebutton
             // 
@@ -255,7 +254,7 @@ namespace TravelManagement
             this.savebutton.ForeColor = System.Drawing.Color.White;
             this.savebutton.Image = null;
             this.savebutton.ImageSize = new System.Drawing.Size(20, 20);
-            this.savebutton.Location = new System.Drawing.Point(576, 269);
+            this.savebutton.Location = new System.Drawing.Point(622, 269);
             this.savebutton.Name = "savebutton";
             this.savebutton.OnHoverBaseColor1 = System.Drawing.Color.LightGray;
             this.savebutton.OnHoverBaseColor2 = System.Drawing.Color.DarkGray;
@@ -357,6 +356,7 @@ namespace TravelManagement
             this.Controls.Add(this.Addpanel);
             this.Name = "adminadd";
             this.Size = new System.Drawing.Size(852, 402);
+            this.Load += new System.EventHandler(this.adminadd_Load);
             this.Addpanel.ResumeLayout(false);
             this.Addpanel.PerformLayout();
             this.panel1.ResumeLayout(false);

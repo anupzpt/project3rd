@@ -29,9 +29,10 @@ namespace TravelManagement
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
             this.gunaPanel1 = new Guna.UI.WinForms.GunaPanel();
-            this.gunaLinkLabel1 = new Guna.UI.WinForms.GunaLinkLabel();
+            this.donthaveaccount = new Guna.UI.WinForms.GunaLinkLabel();
             this.passwordtextbox = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
             this.gunaCircleButton1 = new Guna.UI.WinForms.GunaCircleButton();
@@ -39,6 +40,8 @@ namespace TravelManagement
             this.gunaShadowPanel1 = new Guna.UI.WinForms.GunaShadowPanel();
             this.loginbutton = new Guna.UI.WinForms.GunaButton();
             this.gunaCircleButton2 = new Guna.UI.WinForms.GunaCircleButton();
+            this.register = new TravelManagement.register();
+            this.Refreshtimer = new System.Windows.Forms.Timer(this.components);
             this.panel1.SuspendLayout();
             this.gunaPanel1.SuspendLayout();
             this.gunaShadowPanel1.SuspendLayout();
@@ -50,33 +53,33 @@ namespace TravelManagement
             this.panel1.Controls.Add(this.gunaPanel1);
             this.panel1.Controls.Add(this.passwordtextbox);
             this.panel1.Controls.Add(this.gunaLabel1);
-            this.panel1.Controls.Add(this.gunaCircleButton1);
             this.panel1.Controls.Add(this.usertextbox);
             this.panel1.Controls.Add(this.gunaShadowPanel1);
-            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Location = new System.Drawing.Point(0, 1);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(370, 355);
+            this.panel1.Size = new System.Drawing.Size(380, 367);
             this.panel1.TabIndex = 0;
             // 
             // gunaPanel1
             // 
-            this.gunaPanel1.Controls.Add(this.gunaLinkLabel1);
-            this.gunaPanel1.Location = new System.Drawing.Point(2, 318);
+            this.gunaPanel1.Controls.Add(this.donthaveaccount);
+            this.gunaPanel1.Location = new System.Drawing.Point(4, 331);
             this.gunaPanel1.Name = "gunaPanel1";
-            this.gunaPanel1.Size = new System.Drawing.Size(367, 36);
+            this.gunaPanel1.Size = new System.Drawing.Size(367, 32);
             this.gunaPanel1.TabIndex = 7;
             // 
-            // gunaLinkLabel1
+            // donthaveaccount
             // 
-            this.gunaLinkLabel1.AutoSize = true;
-            this.gunaLinkLabel1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gunaLinkLabel1.Location = new System.Drawing.Point(88, 10);
-            this.gunaLinkLabel1.Name = "gunaLinkLabel1";
-            this.gunaLinkLabel1.Size = new System.Drawing.Size(189, 15);
-            this.gunaLinkLabel1.TabIndex = 0;
-            this.gunaLinkLabel1.TabStop = true;
-            this.gunaLinkLabel1.Text = "Dont Have Account? Register Here";
-            this.gunaLinkLabel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.gunaLinkLabel1_MouseDown);
+            this.donthaveaccount.AutoSize = true;
+            this.donthaveaccount.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.donthaveaccount.Location = new System.Drawing.Point(88, 10);
+            this.donthaveaccount.Name = "donthaveaccount";
+            this.donthaveaccount.Size = new System.Drawing.Size(189, 15);
+            this.donthaveaccount.TabIndex = 0;
+            this.donthaveaccount.TabStop = true;
+            this.donthaveaccount.Text = "Dont Have Account? Register Here";
+            this.donthaveaccount.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.donthaveaccount_LinkClicked);
+            this.donthaveaccount.MouseDown += new System.Windows.Forms.MouseEventHandler(this.gunaLinkLabel1_MouseDown);
             // 
             // passwordtextbox
             // 
@@ -90,7 +93,7 @@ namespace TravelManagement
             this.passwordtextbox.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(53)))), ((int)(((byte)(53)))));
             this.passwordtextbox.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.passwordtextbox.LineThickness = 2;
-            this.passwordtextbox.Location = new System.Drawing.Point(100, 175);
+            this.passwordtextbox.Location = new System.Drawing.Point(100, 146);
             this.passwordtextbox.Margin = new System.Windows.Forms.Padding(4);
             this.passwordtextbox.Name = "passwordtextbox";
             this.passwordtextbox.Size = new System.Drawing.Size(225, 44);
@@ -101,7 +104,7 @@ namespace TravelManagement
             // 
             this.gunaLabel1.AutoSize = true;
             this.gunaLabel1.Font = new System.Drawing.Font("Playfair Display", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel1.Location = new System.Drawing.Point(135, 27);
+            this.gunaLabel1.Location = new System.Drawing.Point(148, 11);
             this.gunaLabel1.Name = "gunaLabel1";
             this.gunaLabel1.Size = new System.Drawing.Size(82, 28);
             this.gunaLabel1.TabIndex = 3;
@@ -119,7 +122,7 @@ namespace TravelManagement
             this.gunaCircleButton1.ForeColor = System.Drawing.Color.White;
             this.gunaCircleButton1.Image = global::TravelManagement.Properties.Resources.icons8_user_96;
             this.gunaCircleButton1.ImageSize = new System.Drawing.Size(52, 52);
-            this.gunaCircleButton1.Location = new System.Drawing.Point(28, 96);
+            this.gunaCircleButton1.Location = new System.Drawing.Point(13, 14);
             this.gunaCircleButton1.Name = "gunaCircleButton1";
             this.gunaCircleButton1.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.gunaCircleButton1.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -141,7 +144,7 @@ namespace TravelManagement
             this.usertextbox.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(53)))), ((int)(((byte)(53)))));
             this.usertextbox.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.usertextbox.LineThickness = 2;
-            this.usertextbox.Location = new System.Drawing.Point(100, 98);
+            this.usertextbox.Location = new System.Drawing.Point(100, 73);
             this.usertextbox.Margin = new System.Windows.Forms.Padding(4);
             this.usertextbox.Name = "usertextbox";
             this.usertextbox.Size = new System.Drawing.Size(225, 44);
@@ -151,15 +154,17 @@ namespace TravelManagement
             // gunaShadowPanel1
             // 
             this.gunaShadowPanel1.BackColor = System.Drawing.Color.Transparent;
-            this.gunaShadowPanel1.BaseColor = System.Drawing.Color.Silver;
+            this.gunaShadowPanel1.BaseColor = System.Drawing.SystemColors.Control;
             this.gunaShadowPanel1.Controls.Add(this.loginbutton);
             this.gunaShadowPanel1.Controls.Add(this.gunaCircleButton2);
-            this.gunaShadowPanel1.Location = new System.Drawing.Point(18, 79);
+            this.gunaShadowPanel1.Controls.Add(this.gunaCircleButton1);
+            this.gunaShadowPanel1.Location = new System.Drawing.Point(18, 42);
             this.gunaShadowPanel1.Name = "gunaShadowPanel1";
             this.gunaShadowPanel1.ShadowColor = System.Drawing.Color.Navy;
             this.gunaShadowPanel1.ShadowDepth = 200;
-            this.gunaShadowPanel1.Size = new System.Drawing.Size(331, 233);
+            this.gunaShadowPanel1.Size = new System.Drawing.Size(338, 283);
             this.gunaShadowPanel1.TabIndex = 6;
+            this.gunaShadowPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.gunaShadowPanel1_Paint);
             // 
             // loginbutton
             // 
@@ -176,7 +181,7 @@ namespace TravelManagement
             this.loginbutton.ForeColor = System.Drawing.Color.White;
             this.loginbutton.Image = null;
             this.loginbutton.ImageSize = new System.Drawing.Size(20, 20);
-            this.loginbutton.Location = new System.Drawing.Point(118, 165);
+            this.loginbutton.Location = new System.Drawing.Point(112, 192);
             this.loginbutton.Name = "loginbutton";
             this.loginbutton.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.loginbutton.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -212,14 +217,28 @@ namespace TravelManagement
             this.gunaCircleButton2.Size = new System.Drawing.Size(52, 52);
             this.gunaCircleButton2.TabIndex = 3;
             // 
+            // register
+            // 
+            this.register.Location = new System.Drawing.Point(0, 0);
+            this.register.Name = "register";
+            this.register.Size = new System.Drawing.Size(367, 370);
+            this.register.TabIndex = 8;
+            this.register.Visible = false;
+            // 
+            // Refreshtimer
+            // 
+            this.Refreshtimer.Tick += new System.EventHandler(this.Refreshtimer_Tick);
+            // 
             // loggedin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Silver;
+            this.BackColor = System.Drawing.SystemColors.Control;
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.register);
             this.Name = "loggedin";
-            this.Size = new System.Drawing.Size(370, 355);
+            this.Size = new System.Drawing.Size(383, 370);
+            this.Load += new System.EventHandler(this.loggedin_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.gunaPanel1.ResumeLayout(false);
@@ -235,11 +254,13 @@ namespace TravelManagement
         private Bunifu.Framework.UI.BunifuMaterialTextbox usertextbox;
         private Guna.UI.WinForms.GunaCircleButton gunaCircleButton1;
         private Guna.UI.WinForms.GunaPanel gunaPanel1;
-        private Guna.UI.WinForms.GunaLinkLabel gunaLinkLabel1;
+        private Guna.UI.WinForms.GunaLinkLabel donthaveaccount;
         private Bunifu.Framework.UI.BunifuMaterialTextbox passwordtextbox;
         private Guna.UI.WinForms.GunaLabel gunaLabel1;
         private Guna.UI.WinForms.GunaShadowPanel gunaShadowPanel1;
         private Guna.UI.WinForms.GunaCircleButton gunaCircleButton2;
         private Guna.UI.WinForms.GunaButton loginbutton;
+        private register register;
+        private System.Windows.Forms.Timer Refreshtimer;
     }
 }

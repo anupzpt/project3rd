@@ -29,6 +29,7 @@ namespace TravelManagement
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.panel1 = new Guna.UI2.WinForms.Guna2ShadowPanel();
             this.specialimage = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
@@ -55,8 +56,10 @@ namespace TravelManagement
             this.label1 = new System.Windows.Forms.Label();
             this.tourpicturebox = new System.Windows.Forms.PictureBox();
             this.adminforntpagepanel = new System.Windows.Forms.Panel();
-            this.Crossbutton = new System.Windows.Forms.Button();
+            this.backcoverpanel = new System.Windows.Forms.Panel();
             this.admin = new TravelManagement.Admin();
+            this.crosstimer = new System.Windows.Forms.Timer(this.components);
+            this.adminimage = new TravelManagement.adminimage();
             this.panel1.SuspendLayout();
             this.specialimage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.specialimagepicturebox)).BeginInit();
@@ -75,6 +78,7 @@ namespace TravelManagement
             this.tourpanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tourpicturebox)).BeginInit();
             this.adminforntpagepanel.SuspendLayout();
+            this.backcoverpanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -372,20 +376,18 @@ namespace TravelManagement
             this.adminforntpagepanel.Size = new System.Drawing.Size(900, 471);
             this.adminforntpagepanel.TabIndex = 17;
             // 
-            // Crossbutton
+            // backcoverpanel
             // 
-            this.Crossbutton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.Crossbutton.BackColor = System.Drawing.Color.Transparent;
-            this.Crossbutton.FlatAppearance.BorderSize = 0;
-            this.Crossbutton.Font = new System.Drawing.Font("Franklin Gothic Demi", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Crossbutton.ForeColor = System.Drawing.Color.Firebrick;
-            this.Crossbutton.Location = new System.Drawing.Point(700, 3);
-            this.Crossbutton.Name = "Crossbutton";
-            this.Crossbutton.Size = new System.Drawing.Size(55, 39);
-            this.Crossbutton.TabIndex = 19;
-            this.Crossbutton.Text = "X";
-            this.Crossbutton.UseVisualStyleBackColor = false;
-            this.Crossbutton.Click += new System.EventHandler(this.Crossbutton_Click);
+            this.backcoverpanel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.backcoverpanel.Controls.Add(this.adminforntpagepanel);
+            this.backcoverpanel.Controls.Add(this.admin);
+            this.backcoverpanel.Controls.Add(this.adminimage);
+            this.backcoverpanel.Location = new System.Drawing.Point(0, 0);
+            this.backcoverpanel.Name = "backcoverpanel";
+            this.backcoverpanel.Size = new System.Drawing.Size(900, 471);
+            this.backcoverpanel.TabIndex = 19;
             // 
             // admin
             // 
@@ -395,14 +397,26 @@ namespace TravelManagement
             this.admin.Name = "admin";
             this.admin.Size = new System.Drawing.Size(900, 471);
             this.admin.TabIndex = 18;
+            this.admin.Load += new System.EventHandler(this.admin_Load);
+            // 
+            // crosstimer
+            // 
+            this.crosstimer.Tick += new System.EventHandler(this.crosstimer_Tick);
+            // 
+            // adminimage
+            // 
+            this.adminimage.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.adminimage.Location = new System.Drawing.Point(0, 0);
+            this.adminimage.Name = "adminimage";
+            this.adminimage.Size = new System.Drawing.Size(900, 471);
+            this.adminimage.TabIndex = 19;
             // 
             // adminfrontpage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.adminforntpagepanel);
-            this.Controls.Add(this.Crossbutton);
-            this.Controls.Add(this.admin);
+            this.Controls.Add(this.backcoverpanel);
             this.Name = "adminfrontpage";
             this.Size = new System.Drawing.Size(900, 471);
             this.Load += new System.EventHandler(this.adminfrontpage_Load);
@@ -432,6 +446,7 @@ namespace TravelManagement
             this.tourpanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tourpicturebox)).EndInit();
             this.adminforntpagepanel.ResumeLayout(false);
+            this.backcoverpanel.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -465,6 +480,8 @@ namespace TravelManagement
         private System.Windows.Forms.PictureBox homeimagepicturebox;
         private System.Windows.Forms.Panel adminforntpagepanel;
         private Admin admin;
-        private System.Windows.Forms.Button Crossbutton;
+        private System.Windows.Forms.Panel backcoverpanel;
+        private System.Windows.Forms.Timer crosstimer;
+        private adminimage adminimage;
     }
 }
